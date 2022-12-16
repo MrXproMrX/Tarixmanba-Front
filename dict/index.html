@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/fancybox-main.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
     <title>Tarixmanba</title>
 </head>
 <body>
@@ -31,11 +32,11 @@
                             <menu class="header__top__menu__top sidenav" id="slide-out">
                                 <ul class="header__top__menu">
                                     <li>
-                                        <a href="map.html" class="header__top__link">Biz haqimizda</a>
+                                        <a href="#!" class="header__top__link">Biz haqimizda</a>
                                     </li>
 
                                     <li>
-                                        <a href="map_2.html" class="header__top__link">Kontaktlar</a>
+                                        <a href="#!" class="header__top__link">Kontaktlar</a>
                                     </li>
                                 </ul>
                             </menu>
@@ -72,31 +73,78 @@
             </div>
 
             <div class="header__bottom">
-                <section class="container">
+                <section class="container"> 
                     <div class="header__bottom__list">
                         <div class="header__bottom__list__item">
-                            <a href="#!" class="header__bottom__sources">
-                                Manbalar
-                                <span>
-                                    <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="20" height="3" rx="1.5" fill="white"/>
-                                        <path d="M0 8.5C0 7.67157 0.671573 7 1.5 7H22.5C23.3284 7 24 7.67157 24 8.5C24 9.32843 23.3284 10 22.5 10H1.5C0.671573 10 0 9.32843 0 8.5Z" fill="white"/>
-                                        <path d="M0 15.5C0 14.6716 0.671573 14 1.5 14H26.5C27.3284 14 28 14.6716 28 15.5C28 16.3284 27.3284 17 26.5 17H1.5C0.671572 17 0 16.3284 0 15.5Z" fill="white"/>
-                                    </svg>                                        
-                                </span>
-                            </a>
+                            <section class="header__bottom__item">
+                                <a href="#!" class="header__bottom__sources modal-trigger" data-target="modal1">
+                                    Manbalar
+                                    <span>
+                                        <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="20" height="3" rx="1.5" fill="white"/>
+                                            <path d="M0 8.5C0 7.67157 0.671573 7 1.5 7H22.5C23.3284 7 24 7.67157 24 8.5C24 9.32843 23.3284 10 22.5 10H1.5C0.671573 10 0 9.32843 0 8.5Z" fill="white"/>
+                                            <path d="M0 15.5C0 14.6716 0.671573 14 1.5 14H26.5C27.3284 14 28 14.6716 28 15.5C28 16.3284 27.3284 17 26.5 17H1.5C0.671572 17 0 16.3284 0 15.5Z" fill="white"/>
+                                        </svg>                                        
+                                    </span>
+                                </a>
 
-                            <a href="#!" class="header__bottom__electronic">
-                                Elektron kutubxona
-                                <span>
-                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.3" d="M5 8L9.33013 0.5H0.669873L5 8Z" fill="white"/>
-                                    </svg>                                        
-                                </span>
-                            </a>
+                                <ul class="header__bottom__mein modal" id="modal1">
+
+                                    <li>
+                                        <a href="by_period.html" class="header__bottom__link">Davr bo‘yicha</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="by_period_2.html" class="header__bottom__link">Davr bo‘yicha manbalar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Yozma manbalar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Tarixiy Hujjatlar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Arxiv Hujjatlar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Arxeologik yodgorliklar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Epigrafik manbalar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Foto va video manbalar Numizmatika</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Muhrlar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Xalq og‘zaki ijodiyoti</a>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section class="header__bottom__item">
+                                <a href="#!" class="header__bottom__electronic">
+                                    Elektron kutubxona
+                                    <span>
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.3" d="M5 8L9.33013 0.5H0.669873L5 8Z" fill="white"/>
+                                        </svg>                                        
+                                    </span>
+                                </a>
+                            </section>
                         </div>
 
-                        <form action="#!" class="header__bottom__form">
+                        <form action="search_results.html" class="header__bottom__form">
                             <input type="text" placeholder="Qidirmoq" class="header__bottom__input">
                             <button type="submit" class="header__bottom__button"><i class="fas fa-search"></i></button>
                         </form>
@@ -107,681 +155,155 @@
     </header>
 
     <!-- header end -->
+    
 
+    <!-- slider start -->
 
-    <!--  Search results start -->
-
-    <div class="search_results">
+    <div class="slider">
         <section class="container">
-            <div class="search_results__cart">
-                <div class="search_results__list">
+            <div class="slider__cart">
 
-                    <aside class="search_results__aside">
+                <section class="slider__list">
+                    <div class="slider__item">
+                        <div class="slider__album">
+                            <img src="foto/album_1.png" alt="album">
+                        </div>
+                        <div class="slider__item__img" style="background-image: url(foto/slic.png);">
+                            <div class="slider__item__text">
+                                <h2 class="slider__title__h2">Юбилейный альбом</h2>
+                                <h3 class="slider__title__h3">Алишер Навоий</h3>
+                            </div>
+                        </div>
+                    </div>
 
-                        <form class="search_results__form" action="#!">
-                            <label class="input-wrap">
-                                <input type="checkbox" checked class="experts__input__form">
-                                <h5 class="search_results__title__h5">Yozma manbalar</h5>
-                                <span class="checkmark"></span>
-                            </label>
-                        </form>
+                    <div class="slider__item">
+                        <div class="slider__album">
+                            <img src="foto/album_2.png" alt="album">
+                        </div>
+                        <div class="slider__item__img" style="background-image: url(foto/slic.png);">
+                            <div class="slider__item__text">
+                                <h2 class="slider__title__h2">Юбилейный альбом</h2>
+                                <h3 class="slider__title__h3">Алишер Навоий</h3>
+                            </div>
+                        </div>
+                    </div>
 
-                        <form class="search_results__form" action="#!">
-                            <h2 class="search_results__title__h2">Davr bo‘yicha <span><i class="fas fa-angle-down"></i></span></h2>
+                    <div class="slider__item">
+                        <div class="slider__album">
+                            <img src="foto/album_3.png" alt="album">
+                        </div>
+                        <div class="slider__item__img" style="background-image: url(foto/slic.png);">
+                            <div class="slider__item__text">
+                                <h2 class="slider__title__h2">Юбилейный альбом</h2>
+                                <h3 class="slider__title__h3">Алишер Навоий</h3>
+                            </div>
+                        </div>
+                    </div>
 
-                            <section class="search_results__aside__item">
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Bronza</h5>
-                                    <h4 class="search_results__title__h4">236</h4>
-                                </label>
+                    <div class="slider__item">
+                        <div class="slider__album">
+                            <img src="foto/album_2.png" alt="album">
+                        </div>
+                        <div class="slider__item__img" style="background-image: url(foto/slic.png);">
+                            <div class="slider__item__text">
+                                <h2 class="slider__title__h2">Юбилейный альбом</h2>
+                                <h3 class="slider__title__h3">Алишер Навоий</h3>
+                            </div>
+                        </div>
+                    </div>
 
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Temir</h5>
-                                    <h4 class="search_results__title__h4">123</h4>
-                                </label>
+                    <div class="slider__item">
+                        <div class="slider__album">
+                            <img src="foto/album_3.png" alt="album">
+                        </div>
+                        <div class="slider__item__img" style="background-image: url(foto/slic.png);">
+                            <div class="slider__item__text">
+                                <h2 class="slider__title__h2">Юбилейный альбом</h2>
+                                <h3 class="slider__title__h3">Алишер Навоий</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <ul class="slider__menu">
+                    <li>
+                        <a href="#!" class="slider__menu__link">Lorem ipsum dolor sit amet</a>
+                    </li>
 
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Antik</h5>
-                                    <h4 class="search_results__title__h4">203</h4>
-                                </label>
+                    <li>
+                        <a href="#!" class="slider__menu__link">Ut enim ad minim veniam, quis</a>
+                    </li>
 
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Ilk o‘rta asrlar</h5>
-                                    <h4 class="search_results__title__h4">142</h4>
-                                </label>
+                    <li>
+                        <a href="#!" class="slider__menu__link">Nostrud exercitation ullamco laboris</a>
+                    </li>
 
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">401-500</h5>
-                                    <h4 class="search_results__title__h4">236</h4>
-                                </label>
+                    <li>
+                        <a href="#!" class="slider__menu__link">Duis aute irure dolor in reprehenderit</a>
+                    </li>
 
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">501-600</h5>
-                                    <h4 class="search_results__title__h4">123</h4>
-                                </label>
+                    <li>
+                        <a href="#!" class="slider__menu__link">In voluptate velit esse cillum dolore</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </section>
+    </div>
+    
+    <!-- slider end -->
+    
 
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">601-700</h5>
-                                    <h4 class="search_results__title__h4">345</h4>
-                                </label>
+    <!-- Written Documents start -->
 
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">701-800</h5>
-                                    <h4 class="search_results__title__h4">142</h4>
-                                </label>
+    <div class="written_documents">
+        <section class="container">
+            <div class="written_sources__cart">
+                <div class="written_documents__list owl-carousel">
 
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">801-900</h5>
-                                    <h4 class="search_results__title__h4">149</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">901-1000</h5>
-                                    <h4 class="search_results__title__h4">236</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">1001-1100</h5>
-                                    <h4 class="search_results__title__h4">325</h4>
-                                </label>
-
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">1101-1200</h5>
-                                    <h4 class="search_results__title__h4">456</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">1201-1300</h5>
-                                    <h4 class="search_results__title__h4">523</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">1301-1400</h5>
-                                    <h4 class="search_results__title__h4">123</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">1401-1500</h5>
-                                    <h4 class="search_results__title__h4">425</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">1501-1600</h5>
-                                    <h4 class="search_results__title__h4">321</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">1601-1700</h5>
-                                    <h4 class="search_results__title__h4">198</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">1701-1800</h5>
-                                    <h4 class="search_results__title__h4">235</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">1801-1900</h5>
-                                    <h4 class="search_results__title__h4">101</h4>
-                                </label>
-
-                            </section>
-                        </form>
-
-                        <form class="search_results__form" action="#!">
-                            <h2 class="search_results__title__h2">Til bo‘yicha <span><i class="fas fa-angle-down"></i></span></h2>
-
-                            <section class="search_results__aside__item">
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Til arab tili</h5>
-                                    <h4 class="search_results__title__h4">123</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Fors tili</h5>
-                                    <h4 class="search_results__title__h4">423</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">O‘zbek tili</h5>
-                                    <h4 class="search_results__title__h4">632</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Xitoy tili</h5>
-                                    <h4 class="search_results__title__h4">236</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Uyg‘ur tili</h5>
-                                    <h4 class="search_results__title__h4">123</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Hind tili</h5>
-                                    <h4 class="search_results__title__h4">466</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Turk tili</h5>
-                                    <h4 class="search_results__title__h4">321</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Yunon tili</h5>
-                                    <h4 class="search_results__title__h4">123</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Rus tili</h5>
-                                    <h4 class="search_results__title__h4">199</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Ingliz tili</h5>
-                                    <h4 class="search_results__title__h4">230</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Gruzin tili</h5>
-                                    <h4 class="search_results__title__h4">302</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Arman tili</h5>
-                                    <h4 class="search_results__title__h4">110</h4>
-                                </label>
-
-                            </section>
-                        </form>
-
-                        <form class="search_results__form" action="#!">
-                            <h2 class="search_results__title__h2">Soha bo’yicha <span><i class="fas fa-angle-down"></i></span></h2>
-
-                            <section class="search_results__aside__item">
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Tarix asarlar</h5>
-                                    <h4 class="search_results__title__h4">236</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Aniq fanlar</h5>
-                                    <h4 class="search_results__title__h4">123</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Tabiy fanlar</h5>
-                                    <h4 class="search_results__title__h4">345</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Badiiy asarlar</h5>
-                                    <h4 class="search_results__title__h4">360</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Diniy asarlar</h5>
-                                    <h4 class="search_results__title__h4">320</h4>
-                                </label>
-
-                            </section>
-                        </form>
-
-                        <form class="search_results__form" action="#!">
-                            <h2 class="search_results__title__h2">Xudud bo’yicha <span><i class="fas fa-angle-down"></i></span></h2>
-
-                            <section class="search_results__aside__item">
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Samarqand</h5>
-                                    <h4 class="search_results__title__h4">236</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Buxoro</h5>
-                                    <h4 class="search_results__title__h4">333</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Andijon</h5>
-                                    <h4 class="search_results__title__h4">123</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Farg’ona</h5>
-                                    <h4 class="search_results__title__h4">345</h4>
-                                </label>
-
-                                <label class="input-wrap-max">
-                                    <input type="checkbox" class="experts__input__form">
-                                    <span class="checkmark"></span>
-                                    <h5 class="search_results__title__h5">Navoiy</h5>
-                                    <h4 class="search_results__title__h4">360</h4>
-                                </label>
-
-                            </section>
-                        </form>
-
-                    </aside>
-
-                    <div class="search_results__list__item">
-
-                        <div class="search_results__item">
-                            <a href="search_results_in.html">
-                                <div class="search_results__img">
-                                    <img src="foto/search_results.png" alt="">
-                                </div>
-                            </a>
-                            
-                            <section>
-                                <ul class="search_results__list__data">
-                                    <li>
-                                        <h3 class="search_results__title__h3">Asar nomi:<span>Tarixi tabariy</span></h3>
-                                    </li>
-                                    
-                                    <li>
-                                        <h3 class="search_results__title__h3">Yili:<span>839-923</span></h3>
-                                    </li>
-                                    
-                                    <li>
-                                        <h3 class="search_results__title__h3">Tili:<span>Arab tili</span></h3>
-                                    </li>
-                                    
-                                    <li>
-                                        <h3 class="search_results__title__h3">Yeri:<span>Eron</span></h3>
-                                    </li>
-                                </ul>
-                                
-                                <ul class="search_results__list__max">
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Audio <span><i class="fas fa-microphone"></i></span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Rasm <span><i class="fas fa-camera-alt"></i></span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Tekst <span><i class="fas fa-book-open"></i></span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Xarita <span><i class="fas fa-globe"></i></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </section>
-
-                            <span class="search_results__colors" style="background-color:#FE2828;"></span>
+                    <div class="written_documents__item">
+                        <h2 class="written_documents__title__h2">Yozma manbalar</h2>
+                        <div class="written_documents__text">
+                            <p>Lorem ipsum dolor sit amet</p>
                         </div>
 
-                        <div class="search_results__item">
-                            <a href="search_results_in.html">
-                                <div class="search_results__img">
-                                    <img src="foto/search_results.png" alt="">
-                                </div>
-                            </a>
-                            
-                            <section>
-                                <ul class="search_results__list__data">
-                                    <li>
-                                        <h3 class="search_results__title__h3">Asar nomi:<span>Tarixi tabariy</span></h3>
-                                    </li>
-                                    
-                                    <li>
-                                        <h3 class="search_results__title__h3">Yili:<span>839-923</span></h3>
-                                    </li>
-                                    
-                                    <li>
-                                        <h3 class="search_results__title__h3">Tili:<span>Arab tili</span></h3>
-                                    </li>
-                                    
-                                    <li>
-                                        <h3 class="search_results__title__h3">Yeri:<span>Eron</span></h3>
-                                    </li>
-                                </ul>
-                                
-                                <ul class="search_results__list__max">
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Audio <span><i class="fas fa-microphone"></i></span>
-                                        </a>
-                                    </li>
+                        <a href="#!" class="written_documents__link">Batafsil</a>
+                    </div>
 
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Rasm <span><i class="fas fa-camera-alt"></i></span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Tekst <span><i class="fas fa-book-open"></i></span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Xarita <span><i class="fas fa-globe"></i></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </section>
-
-                            <span class="search_results__colors" style="background-color:#85CC63;"></span>
+                    <div class="written_documents__item">
+                        <h2 class="written_documents__title__h2">Tarixiy hujjatlar</h2>
+                        <div class="written_documents__text">
+                            <p>Consectetur adipiscing elit</p>
                         </div>
 
-                        <div class="search_results__item">
-                            <a href="search_results_in.html">
-                                <div class="search_results__img">
-                                    <img src="foto/search_results.png" alt="">
-                                </div>
-                            </a>
-                            
-                            <section>
-                                <ul class="search_results__list__data">
-                                    <li>
-                                        <h3 class="search_results__title__h3">Asar nomi:<span>Tarixi tabariy</span></h3>
-                                    </li>
-                                    
-                                    <li>
-                                        <h3 class="search_results__title__h3">Yili:<span>839-923</span></h3>
-                                    </li>
-                                    
-                                    <li>
-                                        <h3 class="search_results__title__h3">Tili:<span>Arab tili</span></h3>
-                                    </li>
-                                    
-                                    <li>
-                                        <h3 class="search_results__title__h3">Yeri:<span>Eron</span></h3>
-                                    </li>
-                                </ul>
-                                
-                                <ul class="search_results__list__max">
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Audio <span><i class="fas fa-microphone"></i></span>
-                                        </a>
-                                    </li>
+                        <a href="#!" class="written_documents__link">Batafsil</a>
+                    </div>
 
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Rasm <span><i class="fas fa-camera-alt"></i></span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Tekst <span><i class="fas fa-book-open"></i></span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Xarita <span><i class="fas fa-globe"></i></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </section>
-
-                            <span class="search_results__colors" style="background-color:#FECF28;"></span>
+                    <div class="written_documents__item">
+                        <h2 class="written_documents__title__h2">Arxiv Hujjatlar</h2>
+                        <div class="written_documents__text">
+                            <p>Eiusmod tempor incididunt</p>
                         </div>
 
-                        <div class="search_results__item">
-                            <a href="search_results_in.html">
-                                <div class="search_results__img">
-                                    <img src="foto/search_results.png" alt="">
-                                </div>
-                            </a>
-                            
-                            <section>
-                                <ul class="search_results__list__data">
-                                    <li>
-                                        <h3 class="search_results__title__h3">Asar nomi:<span>Tarixi tabariy</span></h3>
-                                    </li>
-                                    
-                                    <li>
-                                        <h3 class="search_results__title__h3">Yili:<span>839-923</span></h3>
-                                    </li>
-                                    
-                                    <li>
-                                        <h3 class="search_results__title__h3">Tili:<span>Arab tili</span></h3>
-                                    </li>
-                                    
-                                    <li>
-                                        <h3 class="search_results__title__h3">Yeri:<span>Eron</span></h3>
-                                    </li>
-                                </ul>
-                                
-                                <ul class="search_results__list__max">
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Audio <span><i class="fas fa-microphone"></i></span>
-                                        </a>
-                                    </li>
+                        <a href="#!" class="written_documents__link">Batafsil</a>
+                    </div>
 
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Rasm <span><i class="fas fa-camera-alt"></i></span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Tekst <span><i class="fas fa-book-open"></i></span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Xarita <span><i class="fas fa-globe"></i></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </section>
-
-                            <span class="search_results__colors" style="background-color:#FE2828;"></span>
+                    <div class="written_documents__item">
+                        <h2 class="written_documents__title__h2">Arxeologik yodgorliklar</h2>
+                        <div class="written_documents__text">
+                            <p>Ut labore et dolore magna</p>
                         </div>
 
-                        <div class="search_results__item">
-                            <a href="search_results_in.html">
-                                <div class="search_results__img">
-                                    <img src="foto/search_results.png" alt="">
-                                </div>
-                            </a>
-                            
-                            <section>
-                                <ul class="search_results__list__data">
-                                    <li>
-                                        <h3 class="search_results__title__h3">Asar nomi:<span>Tarixi tabariy</span></h3>
-                                    </li>
-                                    
-                                    <li>
-                                        <h3 class="search_results__title__h3">Yili:<span>839-923</span></h3>
-                                    </li>
-                                    
-                                    <li>
-                                        <h3 class="search_results__title__h3">Tili:<span>Arab tili</span></h3>
-                                    </li>
-                                    
-                                    <li>
-                                        <h3 class="search_results__title__h3">Yeri:<span>Eron</span></h3>
-                                    </li>
-                                </ul>
-                                
-                                <ul class="search_results__list__max">
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Audio <span><i class="fas fa-microphone"></i></span>
-                                        </a>
-                                    </li>
+                        <a href="#!" class="written_documents__link">Batafsil</a>
+                    </div>
 
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Rasm <span><i class="fas fa-camera-alt"></i></span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Tekst <span><i class="fas fa-book-open"></i></span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Xarita <span><i class="fas fa-globe"></i></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </section>
-
-                            <span class="search_results__colors" style="background-color:#85CC63;"></span>
+                    <div class="written_documents__item">
+                        <h2 class="written_documents__title__h2">Yozma manbalar</h2>
+                        <div class="written_documents__text">
+                            <p>Lorem ipsum dolor sit amet</p>
                         </div>
 
-                        <div class="search_results__item">
-                            <a href="search_results_in.html">
-                                <div class="search_results__img">
-                                    <img src="foto/search_results.png" alt="">
-                                </div>
-                            </a>
-                            
-                            <section>
-                                <ul class="search_results__list__data">
-                                    <li>
-                                        <h3 class="search_results__title__h3">Asar nomi:<span>Tarixi tabariy</span></h3>
-                                    </li>
-                                    
-                                    <li>
-                                        <h3 class="search_results__title__h3">Yili:<span>839-923</span></h3>
-                                    </li>
-                                    
-                                    <li>
-                                        <h3 class="search_results__title__h3">Tili:<span>Arab tili</span></h3>
-                                    </li>
-                                    
-                                    <li>
-                                        <h3 class="search_results__title__h3">Yeri:<span>Eron</span></h3>
-                                    </li>
-                                </ul>
-                                
-                                <ul class="search_results__list__max">
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Audio <span><i class="fas fa-microphone"></i></span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Rasm <span><i class="fas fa-camera-alt"></i></span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Tekst <span><i class="fas fa-book-open"></i></span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#!" class="search_results__link__max">
-                                            Xarita <span><i class="fas fa-globe"></i></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </section>
-
-                            <span class="search_results__colors" style="background-color:#FECF28;"></span>
-                        </div>
-
+                        <a href="#!" class="written_documents__link">Batafsil</a>
                     </div>
 
                 </div>
@@ -789,8 +311,1637 @@
         </section>
     </div>
 
-    <!--  Search results end -->
+    <!-- Written Documents end -->
+
+
+    <!-- Written sources start -->
+
+    <div class="written_sources">
+        <section class="container">
+            <div class="written_sources__cart">
+                <div class="written_sources__list__cart">
+                    <h2 class="search_results_in__title__h2">Yozma manbalar</h2>
+                    <a href="#!" class="written_sources__link">Barchasi</a>
+                </div>
     
+                <div class="search_results_in__carusel__cart"> 
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/written_sources_1.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Consectetur adipiscing</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/written_sources_2.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Consectetur adipiscing
+                            </h3>
+
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Lorem ipsum dolor</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/written_sources_3.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Sed do eiusmod tempor
+                            </h3>
+                            
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Lorem ipsum dolor</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/written_sources_4.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Consectetur adipiscing</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/written_sources_3.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Sed do eiusmod tempor
+                            </h3>
+                            
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Lorem ipsum dolor</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Written sources end -->
+
+
+    <!-- Historical documents start -->
+
+    <div class="historical_documents">
+        <section class="container">
+            <div class="historical_documents__cart">
+                <div class="written_sources__list__cart">
+                    <h2 class="search_results_in__title__h2">Tarixiy hujjatlar</h2>
+                    <a href="#!" class="written_sources__link">Barchasi</a>
+                </div>
+    
+                <div class="search_results_in__carusel__cart"> 
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/historical_documents_1.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Consectetur adipiscing</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/historical_documents_2.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Consectetur adipiscing
+                            </h3>
+
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Lorem ipsum dolor</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/historical_documents_3.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Sed do eiusmod tempor
+                            </h3>
+                            
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Lorem ipsum dolor</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/historical_documents_4.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Consectetur adipiscing</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/historical_documents_3.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Sed do eiusmod tempor
+                            </h3>
+                            
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Lorem ipsum dolor</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Historical documents end -->
+
+
+    <!-- Archive documents start -->
+
+    <div class="written_sources">
+        <section class="container">
+            <div class="written_sources__cart">
+                <div class="written_sources__list__cart">
+                    <h2 class="search_results_in__title__h2">Arxiv hujjatlar</h2>
+                    <a href="#!" class="written_sources__link">Barchasi</a>
+                </div>
+    
+                <div class="search_results_in__carusel__cart"> 
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/archive_documents_1.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Consectetur adipiscing</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/archive_documents_2.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Consectetur adipiscing
+                            </h3>
+
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Lorem ipsum dolor</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/archive_documents_3.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Sed do eiusmod tempor
+                            </h3>
+                            
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Lorem ipsum dolor</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/archive_documents_4.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Consectetur adipiscing</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/archive_documents_3.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Sed do eiusmod tempor
+                            </h3>
+                            
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Lorem ipsum dolor</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Archive documents end -->
+
+
+    <!-- Archaeological monuments start -->
+
+    <div class="historical_documents">
+        <section class="container">
+            <div class="historical_documents__cart">
+                <div class="written_sources__list__cart">
+                    <h2 class="search_results_in__title__h2">Arxeologik yodgorliklar</h2>
+                    <a href="#!" class="written_sources__link">Barchasi</a>
+                </div>
+    
+                <div class="search_results_in__carusel__cart"> 
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/archaeological_monuments_1.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Consectetur adipiscing</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/archaeological_monuments_2.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Consectetur adipiscing
+                            </h3>
+
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Lorem ipsum dolor</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/archaeological_monuments_3.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Sed do eiusmod tempor
+                            </h3>
+                            
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Lorem ipsum dolor</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/archaeological_monuments_4.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Consectetur adipiscing</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/archaeological_monuments_3.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Sed do eiusmod tempor
+                            </h3>
+                            
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Lorem ipsum dolor</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Archaeological monuments end -->
+
+
+    <!-- Photo and video sources start -->
+
+    <div class="written_sources">
+        <section class="container">
+            <div class="written_sources__cart">
+                <div class="written_sources__list__cart">
+                    <h2 class="search_results_in__title__h2">Foto va video manbalar</h2>
+                    <a href="#!" class="written_sources__link">Barchasi</a>
+                </div>
+    
+                <div class="search_results_in__carusel__cart"> 
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/photo_and_video_1.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Consectetur adipiscing</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/photo_and_video_2.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Consectetur adipiscing
+                            </h3>
+
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Lorem ipsum dolor</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/photo_and_video_3.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Sed do eiusmod tempor
+                            </h3>
+                            
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Lorem ipsum dolor</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/photo_and_video_4.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Consectetur adipiscing</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/photo_and_video_3.png" alt="manbalar">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Sed do eiusmod tempor
+                            </h3>
+                            
+                            <div class="search_results_in__carusel__cart__text">
+                                <p>Lorem ipsum dolor</p>
+                            </div>
+                            
+                            <ul class="search_results_in__carusel__cart__icons">
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-eye"></i></span>334
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-star"></i></span>4
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="search_results_in__carusel__link__icons">
+                                        <span><i class="fas fa-comment-alt"></i></span>2
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Photo and video sources end -->
+
+
+    <!-- History of Uzbekistan start -->
+
+    <div class="history_uzbekistan">
+        <section class="container">
+            <div class="history_uzbekistan__cart">
+                <div class="history_uzbekistan__list">
+
+                    <div class="history_uzbekistan__item" style="background-image: url(foto/history_uzbekistan_1.png);">
+                        <div class="history_uzbekistan__item__text">
+                            <h2 class="history_uzbekistan__title__h2">O'zbekiston tarixi</h2>
+                            <h4 class="history_uzbekistan__data">23.02.2022</h4>
+                            <a href="#!" class="history_uzbekistan__link">Batafsil</a>
+                        </div>
+                    </div>
+
+                    <div class="history_uzbekistan__item" style="background-image: url(foto/history_uzbekistan_2.png);">
+                        <div class="history_uzbekistan__item__text">
+                            <h2 class="history_uzbekistan__title__h2">O'zbekiston tarixi</h2>
+                            <h4 class="history_uzbekistan__data">23.02.2022</h4>
+                            <a href="#!" class="history_uzbekistan__link">Batafsil</a>
+                        </div>
+                    </div>
+
+                    <div class="history_uzbekistan__item" style="background-image: url(foto/history_uzbekistan_3.png);">
+                        <div class="history_uzbekistan__item__text">
+                            <h2 class="history_uzbekistan__title__h2">O'zbekiston tarixi</h2>
+                            <h4 class="history_uzbekistan__data">23.02.2022</h4>
+                            <a href="#!" class="history_uzbekistan__link">Batafsil</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- History of Uzbekistan end -->
+
+
+    <!-- Electronic library start -->
+
+    <div class="electronic_library">
+        <section class="container">
+            <div class="electronic_library__cart">
+                <div class="written_sources__list__cart">
+                    <h2 class="search_results_in__title__h2">Elektron kutubxona</h2>
+                    <a href="#!" class="written_sources__link">Barchasi</a>
+                </div>
+
+                <div class="electronic_library__list">
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/album_1.png" alt="album">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+
+                            <h4 class="electronic_library__name">Oybek</h4>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom" tabindex="0">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+
+                            <ul class="electronic_library__menu">
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/time.png" alt="time">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/karzinka.png" alt="karzinka">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/album_2.png" alt="album">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+
+                            <h4 class="electronic_library__name">Alisher Navoiy</h4>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom" tabindex="0">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+
+                            <ul class="electronic_library__menu">
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/time.png" alt="time">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/karzinka.png" alt="karzinka">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/album_4.png" alt="album">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+
+                            <h4 class="electronic_library__name">Egemberdi Ermatov</h4>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom" tabindex="0">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+
+                            <ul class="electronic_library__menu">
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/time.png" alt="time">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/karzinka.png" alt="karzinka">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/album_4.png" alt="album">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+
+                            <h4 class="electronic_library__name">Aleksandr Belyaev</h4>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom" tabindex="0">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+
+                            <ul class="electronic_library__menu">
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/time.png" alt="time">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/karzinka.png" alt="karzinka">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/album_5.png" alt="album">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+
+                            <h4 class="electronic_library__name">Shamsiddin Muhammad</h4>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom" tabindex="0">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+
+                            <ul class="electronic_library__menu">
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/time.png" alt="time">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/karzinka.png" alt="karzinka">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/album_6.png" alt="album">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+
+                            <h4 class="electronic_library__name">Nikolay Gogol</h4>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom" tabindex="0">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+
+                            <ul class="electronic_library__menu">
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/time.png" alt="time">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/karzinka.png" alt="karzinka">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/album_7.png" alt="album">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+
+                            <h4 class="electronic_library__name">G’afur G’ulom</h4>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom" tabindex="0">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+
+                            <ul class="electronic_library__menu">
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/time.png" alt="time">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/karzinka.png" alt="karzinka">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/album_8.png" alt="album">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+
+                            <h4 class="electronic_library__name">Abdulla Qodiriy</h4>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom" tabindex="0">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+
+                            <ul class="electronic_library__menu">
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/time.png" alt="time">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/karzinka.png" alt="karzinka">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/album_2.png" alt="album">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+
+                            <h4 class="electronic_library__name">Alisher Navoiy</h4>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom" tabindex="0">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+
+                            <ul class="electronic_library__menu">
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/time.png" alt="time">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/karzinka.png" alt="karzinka">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="search_results_in__carusel__cart__item">
+                            <div class="search_results_in__carusel__cart__img">
+                                <img src="foto/album_4.png" alt="album">
+                            </div>
+
+                            <h3 class="search_results_in__carusel__cart__title">
+                                Lorem ipsum dolor
+                            </h3>
+
+                            <h4 class="electronic_library__name">Egemberdi Ermatov</h4>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom" tabindex="0">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+
+                            <ul class="electronic_library__menu">
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/time.png" alt="time">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="electronic_library__link">
+                                        <img src="foto/karzinka.png" alt="karzinka">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Electronic library end -->
+
+
+    <!-- News start -->
+
+    <div class="news">
+        <section class="container">
+            <div class="news__cart">
+                <div class="written_sources__list__cart">
+                    <h2 class="search_results_in__title__h2">Yangiliklar</h2>
+                    <a href="#!" class="written_sources__link">Barchasi</a>
+                </div>
+
+                <div class="news__list">
+
+                    <div class="news__item">
+                        <section class="news__item__text">
+                            <h3 class="news__title__h3">Lorem ipsum dolor sit amet</h3>
+
+                            <h4 class="news__data">12.03.2022</h4>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </section>
+                        <div class="news__img">
+                            <img src="foto/news_1.png" alt="news">
+                        </div>
+                    </div>
+
+                    <div class="news__item">
+                        <section class="news__item__text">
+                            <h3 class="news__title__h3">Ut aliquip ex ea commodo</h3>
+
+                            <h4 class="news__data">10.03.2022</h4>
+
+                            <a href="#!" class="search_results_in__carusel__link__bottom">
+                                <i class="fas fa-long-arrow-right"></i>
+                            </a>
+                        </section>
+                        <div class="news__img">
+                            <img src="foto/news_2.png" alt="news">
+                        </div>
+                    </div>
+
+                    <div class="news__cart__list">
+
+                        <div class="news__cart__item">
+                            <a href="#!">
+                                <div class="news__cart__img">
+                                    <img src="foto/news_3.png" alt="news">
+                                </div>
+
+                                <h3 class="news__cart__title__h3">Duis aute irure dolor in reprehenderit</h3>
+                            </a>
+                        </div>
+
+                        <div class="news__cart__item">
+                            <a href="#!">
+                                <div class="news__cart__img">
+                                    <img src="foto/news_4.png" alt="news">
+                                </div>
+
+                                <h3 class="news__cart__title__h3">Esse cillum dolore eu fugiat nulla pariatur</h3>
+                            </a>
+                        </div>
+
+                        <div class="news__cart__item">
+                            <a href="#!">
+                                <div class="news__cart__img">
+                                    <img src="foto/news_5.png" alt="news">
+                                </div>
+
+                                <h3 class="news__cart__title__h3">Excepteur sint occaecat cupidatat non proident</h3>
+                            </a>
+                        </div>
+
+                        <div class="news__cart__item">
+                            <a href="#!">
+                                <div class="news__cart__img">
+                                    <img src="foto/news_6.png" alt="news">
+                                </div>
+
+                                <h3 class="news__cart__title__h3">Sunt in culpa qui officia deserunt mollit anim</h3>
+                            </a>
+                        </div>
+
+                        <div class="news__cart__item">
+                            <a href="#!">
+                                <div class="news__cart__img">
+                                    <img src="foto/news_3.png" alt="news">
+                                </div>
+
+                                <h3 class="news__cart__title__h3">Duis aute irure dolor in reprehenderit</h3>
+                            </a>
+                        </div>
+
+                        <div class="news__cart__item">
+                            <a href="#!">
+                                <div class="news__cart__img">
+                                    <img src="foto/news_4.png" alt="news">
+                                </div>
+
+                                <h3 class="news__cart__title__h3">Esse cillum dolore eu fugiat nulla pariatur</h3>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- News end -->
+
+    <!-- Tarixmanba.uz start -->
+
+    <div class="tarixmanba">
+        <section class="container">
+            <div class="tarixmanba__cart">
+                <div class="written_sources__list__cart">
+                    <h2 class="search_results_in__title__h2">Tarixmanba.uz</h2>
+                </div>
+
+                <div class="tarixmanba__text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Tarixmanba.uz end -->
+
 
     <!-- footer start -->
 
@@ -805,11 +1956,11 @@
                             </li>
     
                             <li>
-                                <a href="map.html" class="footer__top__link">Biz haqimizda</a>
+                                <a href="#!" class="footer__top__link">Biz haqimizda</a>
                             </li>
     
                             <li>
-                                <a href="map_2.html" class="footer__top__link">Kontaktlar</a>
+                                <a href="#!" class="footer__top__link">Kontaktlar</a>
                             </li>
                         </ul>
 
@@ -870,6 +2021,7 @@
     
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
     <script src="js/slic.js"></script>
     <script src="js/fancyapps-ui.js"></script>
     <script src="js/fancybox_main.js"></script>

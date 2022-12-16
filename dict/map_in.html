@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/fancybox-main.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
     <title>Tarixmanba</title>
 </head>
 <body>
@@ -31,11 +32,11 @@
                             <menu class="header__top__menu__top sidenav" id="slide-out">
                                 <ul class="header__top__menu">
                                     <li>
-                                        <a href="map.html" class="header__top__link">Biz haqimizda</a>
+                                        <a href="#!" class="header__top__link">Biz haqimizda</a>
                                     </li>
 
                                     <li>
-                                        <a href="map_2.html" class="header__top__link">Kontaktlar</a>
+                                        <a href="#!" class="header__top__link">Kontaktlar</a>
                                     </li>
                                 </ul>
                             </menu>
@@ -72,31 +73,78 @@
             </div>
 
             <div class="header__bottom">
-                <section class="container">
+                <section class="container"> 
                     <div class="header__bottom__list">
                         <div class="header__bottom__list__item">
-                            <a href="#!" class="header__bottom__sources">
-                                Manbalar
-                                <span>
-                                    <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="20" height="3" rx="1.5" fill="white"/>
-                                        <path d="M0 8.5C0 7.67157 0.671573 7 1.5 7H22.5C23.3284 7 24 7.67157 24 8.5C24 9.32843 23.3284 10 22.5 10H1.5C0.671573 10 0 9.32843 0 8.5Z" fill="white"/>
-                                        <path d="M0 15.5C0 14.6716 0.671573 14 1.5 14H26.5C27.3284 14 28 14.6716 28 15.5C28 16.3284 27.3284 17 26.5 17H1.5C0.671572 17 0 16.3284 0 15.5Z" fill="white"/>
-                                    </svg>                                        
-                                </span>
-                            </a>
+                            <section class="header__bottom__item">
+                                <a href="#!" class="header__bottom__sources modal-trigger" data-target="modal1">
+                                    Manbalar
+                                    <span>
+                                        <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="20" height="3" rx="1.5" fill="white"/>
+                                            <path d="M0 8.5C0 7.67157 0.671573 7 1.5 7H22.5C23.3284 7 24 7.67157 24 8.5C24 9.32843 23.3284 10 22.5 10H1.5C0.671573 10 0 9.32843 0 8.5Z" fill="white"/>
+                                            <path d="M0 15.5C0 14.6716 0.671573 14 1.5 14H26.5C27.3284 14 28 14.6716 28 15.5C28 16.3284 27.3284 17 26.5 17H1.5C0.671572 17 0 16.3284 0 15.5Z" fill="white"/>
+                                        </svg>                                        
+                                    </span>
+                                </a>
 
-                            <a href="#!" class="header__bottom__electronic">
-                                Elektron kutubxona
-                                <span>
-                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.3" d="M5 8L9.33013 0.5H0.669873L5 8Z" fill="white"/>
-                                    </svg>                                        
-                                </span>
-                            </a>
+                                <ul class="header__bottom__mein modal" id="modal1">
+
+                                    <li>
+                                        <a href="by_period.html" class="header__bottom__link">Davr bo‘yicha</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="by_period_2.html" class="header__bottom__link">Davr bo‘yicha manbalar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Yozma manbalar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Tarixiy Hujjatlar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Arxiv Hujjatlar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Arxeologik yodgorliklar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Epigrafik manbalar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Foto va video manbalar Numizmatika</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Muhrlar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Xalq og‘zaki ijodiyoti</a>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section class="header__bottom__item">
+                                <a href="#!" class="header__bottom__electronic">
+                                    Elektron kutubxona
+                                    <span>
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.3" d="M5 8L9.33013 0.5H0.669873L5 8Z" fill="white"/>
+                                        </svg>                                        
+                                    </span>
+                                </a>
+                            </section>
                         </div>
 
-                        <form action="#!" class="header__bottom__form">
+                        <form action="search_results.html" class="header__bottom__form">
                             <input type="text" placeholder="Qidirmoq" class="header__bottom__input">
                             <button type="submit" class="header__bottom__button"><i class="fas fa-search"></i></button>
                         </form>
@@ -713,11 +761,11 @@
                             </li>
     
                             <li>
-                                <a href="map.html" class="footer__top__link">Biz haqimizda</a>
+                                <a href="#!" class="footer__top__link">Biz haqimizda</a>
                             </li>
     
                             <li>
-                                <a href="map_2.html" class="footer__top__link">Kontaktlar</a>
+                                <a href="#!" class="footer__top__link">Kontaktlar</a>
                             </li>
                         </ul>
 
@@ -778,6 +826,7 @@
     
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
     <script src="js/slic.js"></script>
     <script src="js/fancyapps-ui.js"></script>
     <script src="js/fancybox_main.js"></script>
@@ -785,4 +834,4 @@
     <script src="js/mar_ru.js"></script>
     <script src="js/index.js"></script>
 </body>
-</html> 
+</html>

@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/fancybox-main.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <title>Tarixmanba</title>
+</head>
+<body>
+
+    <!-- header start -->
+
+    <header>
+        <div class="header">
+            <div class="header__top">
+                <section class="container">
+                    <div class="header__top__list">
+                        <div class="header__top__list__item">
+                            <div class="header__top__logo">
+                                <a href="index.html">
+                                    <img src="foto/logo.svg" alt="logo">
+                                </a>
+                            </div>
+
+                            <menu class="header__top__menu__top sidenav" id="slide-out">
+                                <ul class="header__top__menu">
+                                    <li>
+                                        <a href="#!" class="header__top__link">Biz haqimizda</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__top__link">Kontaktlar</a>
+                                    </li>
+                                </ul>
+                            </menu>
+                        </div>
+
+                        <ul class="header__top__cart__menu">
+                            <li>
+                                <a href="#!" class="header__top__cart__link">
+                                    <span><i class="fas fa-history"></i></span> 
+                                    Mening listim
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#!" class="header__top__cart__link">
+                                    <span><i class="fas fa-shopping-cart"></i></span>
+                                    Savatcha
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#!" class="header__top__cart__link">
+                                    <span><i class="fas fa-user"></i></span>
+                                    Profil
+                                </a>
+                            </li>
+
+                            <li class="header__burger">
+                                <button class="header__burger__link sidenav-trigger" data-target="slide-out"><i class="fas fa-bars"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="header__bottom">
+                <section class="container"> 
+                    <div class="header__bottom__list">
+                        <div class="header__bottom__list__item">
+                            <section class="header__bottom__item">
+                                <a href="#!" class="header__bottom__sources modal-trigger" data-target="modal1">
+                                    Manbalar
+                                    <span>
+                                        <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="20" height="3" rx="1.5" fill="white"/>
+                                            <path d="M0 8.5C0 7.67157 0.671573 7 1.5 7H22.5C23.3284 7 24 7.67157 24 8.5C24 9.32843 23.3284 10 22.5 10H1.5C0.671573 10 0 9.32843 0 8.5Z" fill="white"/>
+                                            <path d="M0 15.5C0 14.6716 0.671573 14 1.5 14H26.5C27.3284 14 28 14.6716 28 15.5C28 16.3284 27.3284 17 26.5 17H1.5C0.671572 17 0 16.3284 0 15.5Z" fill="white"/>
+                                        </svg>                                        
+                                    </span>
+                                </a>
+
+                                <ul class="header__bottom__mein modal" id="modal1">
+
+                                    <li>
+                                        <a href="by_period.html" class="header__bottom__link">Davr bo‘yicha</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="by_period_2.html" class="header__bottom__link">Davr bo‘yicha manbalar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Yozma manbalar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Tarixiy Hujjatlar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Arxiv Hujjatlar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Arxeologik yodgorliklar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Epigrafik manbalar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Foto va video manbalar Numizmatika</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Muhrlar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="header__bottom__link">Xalq og‘zaki ijodiyoti</a>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section class="header__bottom__item">
+                                <a href="#!" class="header__bottom__electronic">
+                                    Elektron kutubxona
+                                    <span>
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.3" d="M5 8L9.33013 0.5H0.669873L5 8Z" fill="white"/>
+                                        </svg>                                        
+                                    </span>
+                                </a>
+                            </section>
+                        </div>
+
+                        <form action="search_results.html" class="header__bottom__form">
+                            <input type="text" placeholder="Qidirmoq" class="header__bottom__input">
+                            <button type="submit" class="header__bottom__button"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>
+
+    <!-- header end -->
+
+    <!--  Search results start -->
+
+    <div class="search_results">
+        <section class="container">
+            <div class="search_results__cart">
+                <div class="search_results__list">
+
+                    <aside class="search_results__aside">
+
+                        <form class="search_results__form" action="#!">
+                            <label class="input-wrap">
+                                <input type="checkbox" checked class="experts__input__form">
+                                <h5 class="search_results__title__h5">Yozma manbalar</h5>
+                                <span class="checkmark"></span>
+                            </label>
+                        </form>
+
+                        <form class="search_results__form" action="#!">
+                            <h2 class="search_results__title__h2">Davr bo‘yicha <span><i class="fas fa-angle-down"></i></span></h2>
+
+                            <section class="search_results__aside__item">
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Bronza</h5>
+                                    <h4 class="search_results__title__h4">236</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Temir</h5>
+                                    <h4 class="search_results__title__h4">123</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Antik</h5>
+                                    <h4 class="search_results__title__h4">203</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Ilk o‘rta asrlar</h5>
+                                    <h4 class="search_results__title__h4">142</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">401-500</h5>
+                                    <h4 class="search_results__title__h4">236</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">501-600</h5>
+                                    <h4 class="search_results__title__h4">123</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">601-700</h5>
+                                    <h4 class="search_results__title__h4">345</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">701-800</h5>
+                                    <h4 class="search_results__title__h4">142</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">801-900</h5>
+                                    <h4 class="search_results__title__h4">149</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">901-1000</h5>
+                                    <h4 class="search_results__title__h4">236</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">1001-1100</h5>
+                                    <h4 class="search_results__title__h4">325</h4>
+                                </label>
+
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">1101-1200</h5>
+                                    <h4 class="search_results__title__h4">456</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">1201-1300</h5>
+                                    <h4 class="search_results__title__h4">523</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">1301-1400</h5>
+                                    <h4 class="search_results__title__h4">123</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">1401-1500</h5>
+                                    <h4 class="search_results__title__h4">425</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">1501-1600</h5>
+                                    <h4 class="search_results__title__h4">321</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">1601-1700</h5>
+                                    <h4 class="search_results__title__h4">198</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">1701-1800</h5>
+                                    <h4 class="search_results__title__h4">235</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">1801-1900</h5>
+                                    <h4 class="search_results__title__h4">101</h4>
+                                </label>
+
+                            </section>
+                        </form>
+
+                        <form class="search_results__form" action="#!">
+                            <h2 class="search_results__title__h2">Til bo‘yicha <span><i class="fas fa-angle-down"></i></span></h2>
+
+                            <section class="search_results__aside__item">
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Til arab tili</h5>
+                                    <h4 class="search_results__title__h4">123</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Fors tili</h5>
+                                    <h4 class="search_results__title__h4">423</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">O‘zbek tili</h5>
+                                    <h4 class="search_results__title__h4">632</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Xitoy tili</h5>
+                                    <h4 class="search_results__title__h4">236</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Uyg‘ur tili</h5>
+                                    <h4 class="search_results__title__h4">123</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Hind tili</h5>
+                                    <h4 class="search_results__title__h4">466</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Turk tili</h5>
+                                    <h4 class="search_results__title__h4">321</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Yunon tili</h5>
+                                    <h4 class="search_results__title__h4">123</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Rus tili</h5>
+                                    <h4 class="search_results__title__h4">199</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Ingliz tili</h5>
+                                    <h4 class="search_results__title__h4">230</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Gruzin tili</h5>
+                                    <h4 class="search_results__title__h4">302</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Arman tili</h5>
+                                    <h4 class="search_results__title__h4">110</h4>
+                                </label>
+
+                            </section>
+                        </form>
+
+                        <form class="search_results__form" action="#!">
+                            <h2 class="search_results__title__h2">Soha bo’yicha <span><i class="fas fa-angle-down"></i></span></h2>
+
+                            <section class="search_results__aside__item">
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Tarix asarlar</h5>
+                                    <h4 class="search_results__title__h4">236</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Aniq fanlar</h5>
+                                    <h4 class="search_results__title__h4">123</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Tabiy fanlar</h5>
+                                    <h4 class="search_results__title__h4">345</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Badiiy asarlar</h5>
+                                    <h4 class="search_results__title__h4">360</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Diniy asarlar</h5>
+                                    <h4 class="search_results__title__h4">320</h4>
+                                </label>
+
+                            </section>
+                        </form>
+
+                        <form class="search_results__form" action="#!">
+                            <h2 class="search_results__title__h2">Xudud bo’yicha <span><i class="fas fa-angle-down"></i></span></h2>
+
+                            <section class="search_results__aside__item">
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Samarqand</h5>
+                                    <h4 class="search_results__title__h4">236</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Buxoro</h5>
+                                    <h4 class="search_results__title__h4">333</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Andijon</h5>
+                                    <h4 class="search_results__title__h4">123</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Farg’ona</h5>
+                                    <h4 class="search_results__title__h4">345</h4>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <input type="checkbox" class="experts__input__form">
+                                    <span class="checkmark"></span>
+                                    <h5 class="search_results__title__h5">Navoiy</h5>
+                                    <h4 class="search_results__title__h4">360</h4>
+                                </label>
+
+                            </section>
+                        </form>
+
+                    </aside>
+
+                    <div class="search_results__list__item">
+
+                        <div class="search_results__item">
+                            <a href="search_results_in.html">
+                                <div class="search_results__img">
+                                    <img src="foto/search_results.png" alt="">
+                                </div>
+                            </a>
+                            
+                            <section>
+                                <ul class="search_results__list__data">
+                                    <li>
+                                        <h3 class="search_results__title__h3">Asar nomi:<span>Tarixi tabariy</span></h3>
+                                    </li>
+                                    
+                                    <li>
+                                        <h3 class="search_results__title__h3">Yili:<span>839-923</span></h3>
+                                    </li>
+                                    
+                                    <li>
+                                        <h3 class="search_results__title__h3">Tili:<span>Arab tili</span></h3>
+                                    </li>
+                                    
+                                    <li>
+                                        <h3 class="search_results__title__h3">Yeri:<span>Eron</span></h3>
+                                    </li>
+                                </ul>
+                                
+                                <ul class="search_results__list__max">
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Audio <span><i class="fas fa-microphone"></i></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Rasm <span><i class="fas fa-camera-alt"></i></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Tekst <span><i class="fas fa-book-open"></i></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Xarita <span><i class="fas fa-globe"></i></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <span class="search_results__colors" style="background-color:#FE2828;"></span>
+                        </div>
+
+                        <div class="search_results__item">
+                            <a href="search_results_in.html">
+                                <div class="search_results__img">
+                                    <img src="foto/search_results.png" alt="">
+                                </div>
+                            </a>
+                            
+                            <section>
+                                <ul class="search_results__list__data">
+                                    <li>
+                                        <h3 class="search_results__title__h3">Asar nomi:<span>Tarixi tabariy</span></h3>
+                                    </li>
+                                    
+                                    <li>
+                                        <h3 class="search_results__title__h3">Yili:<span>839-923</span></h3>
+                                    </li>
+                                    
+                                    <li>
+                                        <h3 class="search_results__title__h3">Tili:<span>Arab tili</span></h3>
+                                    </li>
+                                    
+                                    <li>
+                                        <h3 class="search_results__title__h3">Yeri:<span>Eron</span></h3>
+                                    </li>
+                                </ul>
+                                
+                                <ul class="search_results__list__max">
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Audio <span><i class="fas fa-microphone"></i></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Rasm <span><i class="fas fa-camera-alt"></i></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Tekst <span><i class="fas fa-book-open"></i></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Xarita <span><i class="fas fa-globe"></i></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <span class="search_results__colors" style="background-color:#85CC63;"></span>
+                        </div>
+
+                        <div class="search_results__item">
+                            <a href="search_results_in.html">
+                                <div class="search_results__img">
+                                    <img src="foto/search_results.png" alt="">
+                                </div>
+                            </a>
+                            
+                            <section>
+                                <ul class="search_results__list__data">
+                                    <li>
+                                        <h3 class="search_results__title__h3">Asar nomi:<span>Tarixi tabariy</span></h3>
+                                    </li>
+                                    
+                                    <li>
+                                        <h3 class="search_results__title__h3">Yili:<span>839-923</span></h3>
+                                    </li>
+                                    
+                                    <li>
+                                        <h3 class="search_results__title__h3">Tili:<span>Arab tili</span></h3>
+                                    </li>
+                                    
+                                    <li>
+                                        <h3 class="search_results__title__h3">Yeri:<span>Eron</span></h3>
+                                    </li>
+                                </ul>
+                                
+                                <ul class="search_results__list__max">
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Audio <span><i class="fas fa-microphone"></i></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Rasm <span><i class="fas fa-camera-alt"></i></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Tekst <span><i class="fas fa-book-open"></i></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Xarita <span><i class="fas fa-globe"></i></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <span class="search_results__colors" style="background-color:#FECF28;"></span>
+                        </div>
+
+                        <div class="search_results__item">
+                            <a href="search_results_in.html">
+                                <div class="search_results__img">
+                                    <img src="foto/search_results.png" alt="">
+                                </div>
+                            </a>
+                            
+                            <section>
+                                <ul class="search_results__list__data">
+                                    <li>
+                                        <h3 class="search_results__title__h3">Asar nomi:<span>Tarixi tabariy</span></h3>
+                                    </li>
+                                    
+                                    <li>
+                                        <h3 class="search_results__title__h3">Yili:<span>839-923</span></h3>
+                                    </li>
+                                    
+                                    <li>
+                                        <h3 class="search_results__title__h3">Tili:<span>Arab tili</span></h3>
+                                    </li>
+                                    
+                                    <li>
+                                        <h3 class="search_results__title__h3">Yeri:<span>Eron</span></h3>
+                                    </li>
+                                </ul>
+                                
+                                <ul class="search_results__list__max">
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Audio <span><i class="fas fa-microphone"></i></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Rasm <span><i class="fas fa-camera-alt"></i></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Tekst <span><i class="fas fa-book-open"></i></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Xarita <span><i class="fas fa-globe"></i></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <span class="search_results__colors" style="background-color:#FE2828;"></span>
+                        </div>
+
+                        <div class="search_results__item">
+                            <a href="search_results_in.html">
+                                <div class="search_results__img">
+                                    <img src="foto/search_results.png" alt="">
+                                </div>
+                            </a>
+                            
+                            <section>
+                                <ul class="search_results__list__data">
+                                    <li>
+                                        <h3 class="search_results__title__h3">Asar nomi:<span>Tarixi tabariy</span></h3>
+                                    </li>
+                                    
+                                    <li>
+                                        <h3 class="search_results__title__h3">Yili:<span>839-923</span></h3>
+                                    </li>
+                                    
+                                    <li>
+                                        <h3 class="search_results__title__h3">Tili:<span>Arab tili</span></h3>
+                                    </li>
+                                    
+                                    <li>
+                                        <h3 class="search_results__title__h3">Yeri:<span>Eron</span></h3>
+                                    </li>
+                                </ul>
+                                
+                                <ul class="search_results__list__max">
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Audio <span><i class="fas fa-microphone"></i></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Rasm <span><i class="fas fa-camera-alt"></i></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Tekst <span><i class="fas fa-book-open"></i></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Xarita <span><i class="fas fa-globe"></i></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <span class="search_results__colors" style="background-color:#85CC63;"></span>
+                        </div>
+
+                        <div class="search_results__item">
+                            <a href="search_results_in.html">
+                                <div class="search_results__img">
+                                    <img src="foto/search_results.png" alt="">
+                                </div>
+                            </a>
+                            
+                            <section>
+                                <ul class="search_results__list__data">
+                                    <li>
+                                        <h3 class="search_results__title__h3">Asar nomi:<span>Tarixi tabariy</span></h3>
+                                    </li>
+                                    
+                                    <li>
+                                        <h3 class="search_results__title__h3">Yili:<span>839-923</span></h3>
+                                    </li>
+                                    
+                                    <li>
+                                        <h3 class="search_results__title__h3">Tili:<span>Arab tili</span></h3>
+                                    </li>
+                                    
+                                    <li>
+                                        <h3 class="search_results__title__h3">Yeri:<span>Eron</span></h3>
+                                    </li>
+                                </ul>
+                                
+                                <ul class="search_results__list__max">
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Audio <span><i class="fas fa-microphone"></i></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Rasm <span><i class="fas fa-camera-alt"></i></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Tekst <span><i class="fas fa-book-open"></i></span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="search_results__link__max">
+                                            Xarita <span><i class="fas fa-globe"></i></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <span class="search_results__colors" style="background-color:#FECF28;"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--  Search results end -->
+    
+
+    <!-- footer start -->
+
+    <footer>
+        <div class="footer">
+            <div class="footer__top">
+                <section class="container">
+                    <div class="footer__top__list">
+                        <ul class="footer__top__menu">
+                            <li>
+                                <a href="#!" class="footer__top__link">Elektron kutubxona</a>
+                            </li>
+    
+                            <li>
+                                <a href="#!" class="footer__top__link">Biz haqimizda</a>
+                            </li>
+    
+                            <li>
+                                <a href="#!" class="footer__top__link">Kontaktlar</a>
+                            </li>
+                        </ul>
+
+                        <div class="footer__top__item">
+                            <div class="footer__top__brind">
+                                <a href="#!">
+                                    <img src="foto/apple.png" alt="apple">
+                                </a>
+
+                                <a href="#!">
+                                    <img src="foto/google.png" alt="google">
+                                </a>
+                            </div>
+                            
+                            <section>
+                                <ul class="footer__top__contacts">
+                                    <li>
+                                        <a href="tel:+998 94 505 45 05" class="footer__top__contacts__link"><span><i class="fas fa-phone-alt"></i></span>+998 94 505 45 05</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="mailto:info@sos.uz" class="footer__top__contacts__link"><span><i class="fas fa-envelope"></i></span>info@sos.uz</a>
+                                    </li>
+                                </ul>
+
+                                <ul class="footer__top__icons">
+                                    <li>
+                                        <a href="#!" class="footer__top__icons__link"><i class="fab fa-instagram"></i></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="footer__top__icons__link"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" class="footer__top__icons__link"><i class="fab fa-telegram-plane"></i></a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="footer__bottom">
+                <section class="container">
+                    <div class="footer__bottom__list">
+                        <h4 class="footer__bottom__title__h4">«Tarixmanba.uz» Все права защищены</h4>
+                        <h4 class="footer__bottom__title__h4">© Copyright 2021 - Web developed by SOS Group</h4>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer end -->
+     
+    
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/slic.js"></script>
+    <script src="js/fancyapps-ui.js"></script>
+    <script src="js/fancybox_main.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/mar_ru.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

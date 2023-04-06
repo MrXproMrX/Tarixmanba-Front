@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/custom1.css">
+    <link rel="stylesheet" href="css/fancybox-main.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <title>Arxiv hujjatlar</title>
+</head>
+<body>
+    <!-- header start -->
+
+    <header>
+        <div class="header">
+            <div class="header__top">
+                <div class="header__top__list">
+                    <div class="header__top__list__item">
+                        <div class="header__top__logo">
+                            <a href="index.html">
+                                <img src="foto/logo.svg" alt="logo">
+                            </a>
+                        </div>
+
+                        <section class="header__bottom__item">
+                            <a href="#!" class="header__bottom__sources modal-trigger" data-target="modal1">
+                                Manbalar
+                                <span>
+                                    <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="20" height="3" rx="1.5" fill="white"/>
+                                        <path d="M0 8.5C0 7.67157 0.671573 7 1.5 7H22.5C23.3284 7 24 7.67157 24 8.5C24 9.32843 23.3284 10 22.5 10H1.5C0.671573 10 0 9.32843 0 8.5Z" fill="white"/>
+                                        <path d="M0 15.5C0 14.6716 0.671573 14 1.5 14H26.5C27.3284 14 28 14.6716 28 15.5C28 16.3284 27.3284 17 26.5 17H1.5C0.671572 17 0 16.3284 0 15.5Z" fill="white"/>
+                                    </svg>                                        
+                                </span>
+                            </a>
+
+                            <ul class="header__bottom__mein modal" id="modal1">
+
+                                <li>
+                                    <a href="archaeologicalMonuments.html" class="header__bottom__link ">Arxeologik yodgorliklar</a>
+                                </li>
+        
+                                <li>
+                                    <a href="archiveDocuments.html" class="header__bottom__link ">Arxiv hujjatjar</a>
+                                </li>
+        
+                                <li>
+                                    <a href="epigraphs.html" class="header__bottom__link ">Epigrafik manbalar</a>
+                                </li>
+        
+                                <li>
+                                    <a href="photoGoesVideo.html" class="header__bottom__link ">Foto va video manbalar</a>
+                                </li>
+        
+                                <li>
+                                    <a href="press.html" class="header__bottom__link ">Matbuot</a>
+                                </li>
+        
+                                <li>
+                                    <a href="seals.html" class="header__bottom__link ">Muhrlar</a>
+                                </li>
+        
+                                <li>
+                                    <a href="numismatics.html" class="header__bottom__link ">Numizmatika</a>
+                                </li>
+        
+                                <li>
+                                    <a href="historicalDocuments.html" class="header__bottom__link ">Tarixiy hujjatlar</a>
+                                </li>
+        
+                                <li>
+                                    <a href="folkArt.html" class="header__bottom__link ">Xalq og'zaki ijodi</a>
+                                </li>
+        
+                                <li>
+                                    <a href="writtenSources.html" class="header__bottom__link ">Yozma banbalar</a>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <menu class="header__top__menu__top sidenav" id="slide-out">
+                            <ul class="header__top__menu">
+                                <li>
+                                    <a href="#!" class="header__top__link">Kutubxona</a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="header__top__link">Biz haqimizda</a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="header__top__link">Yangiliklar</a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="header__top__link">Bog’lanish</a>
+                                </li>
+                            </ul>    
+                        </menu>
+
+                        <div class="header__burger">
+                            <button class="header__burger__link sidenav-trigger" data-target="slide-out"><i class="fas fa-bars"></i></button>
+                        </div>
+                    </div>
+
+                    <ul class="header__top__cart">
+                        <li>
+                            <a href="#!" class="header__top__cart__link"><span><i class="fas fa-user"></i></span>Kabinet</a>
+                        </li>
+
+                        <li>
+                            <!-- Ko'zi ojizlar uchun start -->
+							<div class="header__accessibility__mrx">
+                                <div class="header__accessibility">
+                                    <span class="header__accessibility__icon" id="haAccessibilityIcon">
+                                        <button class="header__top__cart__link"><span><i class="fas fa-eye"></i></span>Zaeif ko’rovchilar uchun</button>
+									</span>
+									<div class="header__accessibility__dropdown ha__dropdown">
+                                        <div class="ha__dropdown__content">
+                                            <h4 class="ha__title">View:</h4>
+											<div class="custom-form-group">
+                                                <div class="custom-form-check">
+                                                    <input
+                                                    id="normalDesign"
+                                                    name="designPatterns"
+                                                    class="custom-form-check-input"
+                                                    type="radio"
+                                                    value="normalDesign"
+													/>
+													<label class="custom-form-check-label" for="normalDesign">
+                                                        Normal design
+													</label>
+												</div>
+                                                
+												<div class="custom-form-check">
+                                                    <input
+                                                    id="blackAndWhiteDesign"
+                                                    name="designPatterns"
+                                                    class="custom-form-check-input"
+                                                    type="radio"
+                                                    value="blackAndWhiteDesign"
+													/>
+													<label class="custom-form-check-label" for="blackAndWhiteDesign">
+                                                        Black and white design
+													</label>
+												</div>
+											</div>
+                                            
+											<h4 class="ha__title">Font size:</h4>
+											<div class="ha__btn-group">
+                                                <button id="fontSizeMin" class="ha_btn">A-</button>
+												<button id="fontSizeDefault" class="ha_btn">A</button>
+												<button id="fontSizeMax" class="ha_btn">A+</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                            <!-- Ko'zi ojizlar uchun end -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- header end -->
+
+    <!-- about start -->
+
+    <div class="aboutTop"></div>
+
+    <!-- about end -->
+
+    <!--  Search results start -->
+
+    <div class="search_results">
+        <section class="container">
+            <div class="search_results__cart">
+                <div class="search_results__list">
+
+                    <aside class="writtenSources__aside">
+                        <h2 class="writtenSources__title__h3">Arxiv hujjatlar</h2>
+
+                        <form class="writtenSources__form" action="#!">
+                            <h2 class="writtenSources__title__h2">Hudud bo'yicha</h2>
+
+                            <section class="writtenSources__aside__item">
+                                <label class="input-wrap-max">
+                                    <h5 class="writtenSources__title__h5">O‘zbekiston milliy arxivi</h5>
+                                    <section class="writtenSources__item">
+                                        <input type="checkbox" class="experts__input__form">
+                                        <span class="checkmark"></span>
+                                    </section>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <h5 class="writtenSources__title__h5">Kino-foto foni xujjatlari</h5>
+                                    <section class="writtenSources__item">
+                                        <input type="checkbox" class="experts__input__form">
+                                        <span class="checkmark"></span>
+                                    </section>
+                                </label>
+                                
+                                <label class="input-wrap-max">
+                                    <h5 class="writtenSources__title__h5">Ilmiy texnikaviy va tibbiyot hujjatlari</h5>
+                                    <section class="writtenSources__item">
+                                        <input type="checkbox" class="experts__input__form">
+                                        <span class="checkmark"></span>
+                                    </section>
+                                </label>
+                            </section>
+                        </form>
+
+                        <form class="writtenSources__form" action="#!">
+                            <h2 class="writtenSources__title__h2">Davr bo'yicha</h2>
+
+                            <section class="writtenSources__aside__item">
+
+                                <label class="input-wrap-max">
+                                    <h5 class="writtenSources__title__h5">Tarixiy (IX asrdan 1917 yilga qadar)</h5>
+                                    <section class="writtenSources__item">
+                                        <input type="checkbox" class="experts__input__form">
+                                        <span class="checkmark"></span>
+                                    </section>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <h5 class="writtenSources__title__h5">Sovet davri (1917-1991)</h5>
+                                    <section class="writtenSources__item">
+                                        <input type="checkbox" class="experts__input__form">
+                                        <span class="checkmark"></span>
+                                    </section>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <h5 class="writtenSources__title__h5">Mustaqillik davri (1991-2005)</h5>
+                                    <section class="writtenSources__item">
+                                        <input type="checkbox" class="experts__input__form">
+                                        <span class="checkmark"></span>
+                                    </section>
+                                </label>
+
+                                <a href="#!" class="writtenSources__link">Yana <span><i class="fa-sharp fa-solid fa-arrow-down"></i></span></a>
+                            </section>
+                        </form>
+
+                        <form class="writtenSources__form" action="#!">
+                            <h2 class="writtenSources__title__h2">Til bo'yicha</h2>
+
+                            <section class="writtenSources__aside__item">
+                                <label class="input-wrap-max">
+                                    <h5 class="writtenSources__title__h5">Fors tili</h5>
+                                    <section class="writtenSources__item">
+                                        <input type="checkbox" class="experts__input__form">
+                                        <span class="checkmark"></span>
+                                    </section>
+                                </label>
+                                
+                                <label class="input-wrap-max">
+                                    <h5 class="writtenSources__title__h5">O‘zbek tili</h5>
+                                    <section class="writtenSources__item">
+                                        <input type="checkbox" class="experts__input__form">
+                                        <span class="checkmark"></span>
+                                    </section>
+                                </label>
+
+                                <label class="input-wrap-max">
+                                    <h5 class="writtenSources__title__h5">Tojik tili</h5>
+                                    <section class="writtenSources__item">
+                                        <input type="checkbox" class="experts__input__form">
+                                        <span class="checkmark"></span>
+                                    </section>
+                                </label>
+
+                                <a href="#!" class="writtenSources__link">Yana <span><i class="fa-sharp fa-solid fa-arrow-down"></i></span></a>
+                            </section>
+                        </form>
+                    </aside>
+
+                    <section>
+                        <div class="search_results__list__item">
+
+                            <div class="search_results__item">
+                                <a href="search_results_in.html" class="search_results__item__link">
+                                    <div class="search_results__img">
+                                        <img src="foto/search_results.png" alt="">
+                                    </div>
+                                    <ul class="search_results_in__carusel__cart__icons">
+                                        <li>
+                                            <h4 class="search_results_in__carusel__link__icons">
+                                                <span><i class="fas fa-eye"></i></span>334
+                                            </h4>
+                                        </li>
+        
+                                        <li>
+                                            <h4 class="search_results_in__carusel__link__icons">
+                                                <span><i class="fas fa-star"></i></span>4
+                                            </h4>
+                                        </li>
+        
+                                        <li>
+                                            <h4 class="search_results_in__carusel__link__icons">
+                                                <span><i class="fas fa-comment-alt"></i></span>2
+                                            </h4>
+                                        </li>
+                                    </ul>
+                                </a>
+                                
+                                <section>
+                                    <ul class="search_results__list__data">
+                                        <li>
+                                            <h3 class="search_results__title__h3">Asar nomi:<span>Tarixi tabariy</span></h3>
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="search_results__title__h3">Yili:<span>839-923</span></h3>
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="search_results__title__h3">Tili:<span>Arab tili</span></h3>
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="search_results__title__h3">Yeri:<span>Eron</span></h3>
+                                        </li>
+                                    </ul>
+                                    
+                                    <section class="search_results__cart__item">
+                                        <ul class="search_results__list__max">
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Audio <span><i class="fas fa-microphone"></i></span>
+                                                </a>
+                                            </li>
+        
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Rasm <span><i class="fas fa-camera-alt"></i></span>
+                                                </a>
+                                            </li>
+        
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Tekst <span><i class="fas fa-book-open"></i></span>
+                                                </a>
+                                            </li>
+        
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Xarita <span><i class="fas fa-globe"></i></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="search_results__list__max">
+                                            <li>
+                                                <a href="#!" class="search_results__link__max search_results__colors">
+                                                    Ulashilgan: 13 <span><i class="fas fa-share-square"></i></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </section>
+                            </div>
+    
+                            <div class="search_results__item">
+                                <a href="search_results_in.html" class="search_results__item__link">
+                                    <div class="search_results__img">
+                                        <img src="foto/search_results.png" alt="">
+                                    </div>
+                                    <ul class="search_results_in__carusel__cart__icons">
+                                        <li>
+                                            <h4 class="search_results_in__carusel__link__icons">
+                                                <span><i class="fas fa-eye"></i></span>334
+                                            </h4>
+                                        </li>
+        
+                                        <li>
+                                            <h4 class="search_results_in__carusel__link__icons">
+                                                <span><i class="fas fa-star"></i></span>4
+                                            </h4>
+                                        </li>
+        
+                                        <li>
+                                            <h4 class="search_results_in__carusel__link__icons">
+                                                <span><i class="fas fa-comment-alt"></i></span>2
+                                            </h4>
+                                        </li>
+                                    </ul>
+                                </a>
+                                
+                                <section>
+                                    <ul class="search_results__list__data">
+                                        <li>
+                                            <h3 class="search_results__title__h3">Asar nomi:<span>Tarixi tabariy</span></h3>
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="search_results__title__h3">Yili:<span>839-923</span></h3>
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="search_results__title__h3">Tili:<span>Arab tili</span></h3>
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="search_results__title__h3">Yeri:<span>Eron</span></h3>
+                                        </li>
+                                    </ul>
+                                    
+                                    <section class="search_results__cart__item">
+                                        <ul class="search_results__list__max">
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Audio <span><i class="fas fa-microphone"></i></span>
+                                                </a>
+                                            </li>
+        
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Rasm <span><i class="fas fa-camera-alt"></i></span>
+                                                </a>
+                                            </li>
+        
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Tekst <span><i class="fas fa-book-open"></i></span>
+                                                </a>
+                                            </li>
+        
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Xarita <span><i class="fas fa-globe"></i></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="search_results__list__max">
+                                            <li>
+                                                <a href="#!" class="search_results__link__max search_results__colors">
+                                                    Ulashilgan: 13 <span><i class="fas fa-share-square"></i></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </section>
+                            </div>
+    
+                            <div class="search_results__item">
+                                <a href="search_results_in.html" class="search_results__item__link">
+                                    <div class="search_results__img">
+                                        <img src="foto/search_results.png" alt="">
+                                    </div>
+                                    <ul class="search_results_in__carusel__cart__icons">
+                                        <li>
+                                            <h4 class="search_results_in__carusel__link__icons">
+                                                <span><i class="fas fa-eye"></i></span>334
+                                            </h4>
+                                        </li>
+        
+                                        <li>
+                                            <h4 class="search_results_in__carusel__link__icons">
+                                                <span><i class="fas fa-star"></i></span>4
+                                            </h4>
+                                        </li>
+        
+                                        <li>
+                                            <h4 class="search_results_in__carusel__link__icons">
+                                                <span><i class="fas fa-comment-alt"></i></span>2
+                                            </h4>
+                                        </li>
+                                    </ul>
+                                </a>
+                                
+                                <section>
+                                    <ul class="search_results__list__data">
+                                        <li>
+                                            <h3 class="search_results__title__h3">Asar nomi:<span>Tarixi tabariy</span></h3>
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="search_results__title__h3">Yili:<span>839-923</span></h3>
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="search_results__title__h3">Tili:<span>Arab tili</span></h3>
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="search_results__title__h3">Yeri:<span>Eron</span></h3>
+                                        </li>
+                                    </ul>
+                                    
+                                    <section class="search_results__cart__item">
+                                        <ul class="search_results__list__max">
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Audio <span><i class="fas fa-microphone"></i></span>
+                                                </a>
+                                            </li>
+        
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Rasm <span><i class="fas fa-camera-alt"></i></span>
+                                                </a>
+                                            </li>
+        
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Tekst <span><i class="fas fa-book-open"></i></span>
+                                                </a>
+                                            </li>
+        
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Xarita <span><i class="fas fa-globe"></i></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="search_results__list__max">
+                                            <li>
+                                                <a href="#!" class="search_results__link__max search_results__colors">
+                                                    Ulashilgan: 13 <span><i class="fas fa-share-square"></i></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </section>
+                            </div>
+    
+                            <div class="search_results__item">
+                                <a href="search_results_in.html" class="search_results__item__link">
+                                    <div class="search_results__img">
+                                        <img src="foto/search_results.png" alt="">
+                                    </div>
+                                    <ul class="search_results_in__carusel__cart__icons">
+                                        <li>
+                                            <h4 class="search_results_in__carusel__link__icons">
+                                                <span><i class="fas fa-eye"></i></span>334
+                                            </h4>
+                                        </li>
+        
+                                        <li>
+                                            <h4 class="search_results_in__carusel__link__icons">
+                                                <span><i class="fas fa-star"></i></span>4
+                                            </h4>
+                                        </li>
+        
+                                        <li>
+                                            <h4 class="search_results_in__carusel__link__icons">
+                                                <span><i class="fas fa-comment-alt"></i></span>2
+                                            </h4>
+                                        </li>
+                                    </ul>
+                                </a>
+                                
+                                <section>
+                                    <ul class="search_results__list__data">
+                                        <li>
+                                            <h3 class="search_results__title__h3">Asar nomi:<span>Tarixi tabariy</span></h3>
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="search_results__title__h3">Yili:<span>839-923</span></h3>
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="search_results__title__h3">Tili:<span>Arab tili</span></h3>
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="search_results__title__h3">Yeri:<span>Eron</span></h3>
+                                        </li>
+                                    </ul>
+                                    
+                                    <section class="search_results__cart__item">
+                                        <ul class="search_results__list__max">
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Audio <span><i class="fas fa-microphone"></i></span>
+                                                </a>
+                                            </li>
+        
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Rasm <span><i class="fas fa-camera-alt"></i></span>
+                                                </a>
+                                            </li>
+        
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Tekst <span><i class="fas fa-book-open"></i></span>
+                                                </a>
+                                            </li>
+        
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Xarita <span><i class="fas fa-globe"></i></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="search_results__list__max">
+                                            <li>
+                                                <a href="#!" class="search_results__link__max search_results__colors">
+                                                    Ulashilgan: 13 <span><i class="fas fa-share-square"></i></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </section>
+                            </div>
+    
+                            <div class="search_results__item">
+                                <a href="search_results_in.html" class="search_results__item__link">
+                                    <div class="search_results__img">
+                                        <img src="foto/search_results.png" alt="">
+                                    </div>
+                                    <ul class="search_results_in__carusel__cart__icons">
+                                        <li>
+                                            <h4 class="search_results_in__carusel__link__icons">
+                                                <span><i class="fas fa-eye"></i></span>334
+                                            </h4>
+                                        </li>
+        
+                                        <li>
+                                            <h4 class="search_results_in__carusel__link__icons">
+                                                <span><i class="fas fa-star"></i></span>4
+                                            </h4>
+                                        </li>
+        
+                                        <li>
+                                            <h4 class="search_results_in__carusel__link__icons">
+                                                <span><i class="fas fa-comment-alt"></i></span>2
+                                            </h4>
+                                        </li>
+                                    </ul>
+                                </a>
+                                
+                                <section>
+                                    <ul class="search_results__list__data">
+                                        <li>
+                                            <h3 class="search_results__title__h3">Asar nomi:<span>Tarixi tabariy</span></h3>
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="search_results__title__h3">Yili:<span>839-923</span></h3>
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="search_results__title__h3">Tili:<span>Arab tili</span></h3>
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="search_results__title__h3">Yeri:<span>Eron</span></h3>
+                                        </li>
+                                    </ul>
+                                    
+                                    <section class="search_results__cart__item">
+                                        <ul class="search_results__list__max">
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Audio <span><i class="fas fa-microphone"></i></span>
+                                                </a>
+                                            </li>
+        
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Rasm <span><i class="fas fa-camera-alt"></i></span>
+                                                </a>
+                                            </li>
+        
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Tekst <span><i class="fas fa-book-open"></i></span>
+                                                </a>
+                                            </li>
+        
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Xarita <span><i class="fas fa-globe"></i></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="search_results__list__max">
+                                            <li>
+                                                <a href="#!" class="search_results__link__max search_results__colors">
+                                                    Ulashilgan: 13 <span><i class="fas fa-share-square"></i></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </section>
+                            </div>
+    
+                            <div class="search_results__item">
+                                <a href="search_results_in.html" class="search_results__item__link">
+                                    <div class="search_results__img">
+                                        <img src="foto/search_results.png" alt="">
+                                    </div>
+                                    <ul class="search_results_in__carusel__cart__icons">
+                                        <li>
+                                            <h4 class="search_results_in__carusel__link__icons">
+                                                <span><i class="fas fa-eye"></i></span>334
+                                            </h4>
+                                        </li>
+        
+                                        <li>
+                                            <h4 class="search_results_in__carusel__link__icons">
+                                                <span><i class="fas fa-star"></i></span>4
+                                            </h4>
+                                        </li>
+        
+                                        <li>
+                                            <h4 class="search_results_in__carusel__link__icons">
+                                                <span><i class="fas fa-comment-alt"></i></span>2
+                                            </h4>
+                                        </li>
+                                    </ul>
+                                </a>
+                                
+                                <section>
+                                    <ul class="search_results__list__data">
+                                        <li>
+                                            <h3 class="search_results__title__h3">Asar nomi:<span>Tarixi tabariy</span></h3>
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="search_results__title__h3">Yili:<span>839-923</span></h3>
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="search_results__title__h3">Tili:<span>Arab tili</span></h3>
+                                        </li>
+                                        
+                                        <li>
+                                            <h3 class="search_results__title__h3">Yeri:<span>Eron</span></h3>
+                                        </li>
+                                    </ul>
+                                    
+                                    <section class="search_results__cart__item">
+                                        <ul class="search_results__list__max">
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Audio <span><i class="fas fa-microphone"></i></span>
+                                                </a>
+                                            </li>
+        
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Rasm <span><i class="fas fa-camera-alt"></i></span>
+                                                </a>
+                                            </li>
+        
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Tekst <span><i class="fas fa-book-open"></i></span>
+                                                </a>
+                                            </li>
+        
+                                            <li>
+                                                <a href="#!" class="search_results__link__max">
+                                                    Xarita <span><i class="fas fa-globe"></i></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="search_results__list__max">
+                                            <li>
+                                                <a href="#!" class="search_results__link__max search_results__colors">
+                                                    Ulashilgan: 13 <span><i class="fas fa-share-square"></i></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </section>
+                            </div>
+    
+                        </div>
+
+                        <ul class="search_results__pagination">
+                            <li>
+                                <a href="#!" class="search_results__pagination__next"><i class="fas fa-chevron-left"></i></a>
+                            </li>
+        
+                            <li>
+                                <a href="#!" class="search_results__pagination__link active">
+                                    1
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#!" class="search_results__pagination__link">
+                                    2
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#!" class="search_results__pagination__link">
+                                    3
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#!" class="search_results__pagination__next"><i class="fas fa-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--  Search results end -->
+
+    <!-- footer start -->
+
+    <footer>
+        <div class="footer">
+            <div class="footer__bottom">
+                <section class="container">
+                    <div class="footer__bottom__list">
+                        <h4 class="footer__bottom__title__h4">«Tarixmanba.uz» Все права защищены</h4>
+                        <h4 class="footer__bottom__title__h4">© Copyright 2023 - Web developed by <a href="https://sos.uz/" target="_blank">SOS Group</a></h4>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer end -->
+    
+    <!-- ---------------------------------------- -->
+    
+    <div id="highlightMenu" class="highlight-menu">
+        <!-- <span id="highlight_share" class="highlight-menu__item disabled">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z"></path></svg>
+        </span> -->
+        <span id="highlight_textToSpeech" class="highlight-menu__item">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.84-5 6.7v2.07c4-.91 7-4.49 7-8.77c0-4.28-3-7.86-7-8.77M16.5 12c0-1.77-1-3.29-2.5-4.03V16c1.5-.71 2.5-2.24 2.5-4M3 9v6h4l5 5V4L7 9H3Z"></path></svg>
+        </span>
+        <span id="highlight_resetTextToSpeech" class="highlight-menu__item">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4L9.91 6.09L12 8.18M4.27 3L3 4.27L7.73 9H3v6h4l5 5v-6.73l4.25 4.26c-.67.51-1.42.93-2.25 1.17v2.07c1.38-.32 2.63-.95 3.68-1.81L19.73 21L21 19.73l-9-9M19 12c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.916 8.916 0 0 0 21 12c0-4.28-3-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71m-2.5 0c0-1.77-1-3.29-2.5-4.03v2.21l2.45 2.45c.05-.2.05-.42.05-.63Z"></path></svg>
+        </span>
+    </div>
+    
+    <!-- ---------------------------------------- -->  
+    
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/slic.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/visuallyImpaired.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

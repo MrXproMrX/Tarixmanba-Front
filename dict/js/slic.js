@@ -62,36 +62,6 @@ $(document).ready(function(){
         ]
     });
 
-    $('.owl-carousel').owlCarousel({
-      loop:false,
-      margin:10,
-      data:false,
-      nav:true,
-      autoplaySpeed:2000,
-      autoplay:true,
-        responsive:{
-          0:{
-            items:1
-          },
-
-          550:{
-            items:2
-          },
-
-          750:{
-            items:3
-          },
-
-          1010:{
-            items:4
-          },
-    
-          1250:{
-            items:4
-          }
-      }
-    });
-
     $('.electronic_library__list').slick({
       rows: 2,
       dots: false,

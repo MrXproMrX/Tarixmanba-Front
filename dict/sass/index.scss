@@ -1,9 +1,9 @@
 @import './files/color';
 @import './files/fonts';
 @import './files/mixins';
-@import '_play';
 @import '_search_results_in';
 @import '_search_results';
+@import '_writtenSources';
 
 body{
     font-family: 'Proxima Nova', sans-serif;
@@ -12,25 +12,29 @@ body{
 }
 
 .container{
-    max-width: 1140px;
+    max-width: 1340px;
     margin: 0 auto;
 }
 
-// header start
+// header start 
 
 .header{
     position: relative;
-    margin-bottom: 60px; 
+    background-color:rgba(160, 112, 72, 0.8);
+    position: absolute;
+    width: 100%;
 
     &__top{
-        padding: 20px 0;    
+        padding: 18px 0;    
     }
 
     &__top__list{
        display: flex;
        align-items: center;
        justify-content: space-between;
-       grid-gap: 20px; 
+       grid-gap: 20px;
+       margin-left: 60px;
+       margin-right: 60px;
     }
 
     &__top__list__item{
@@ -45,12 +49,6 @@ body{
         grid-gap: 50px;
     }
 
-    &__top__cart__menu{
-        display: flex;
-        align-items:center;
-        grid-gap: 50px;
-    }
-
     &__top__logo{
         @include fiximg(245px,40px,false);
         img{
@@ -60,7 +58,7 @@ body{
     }
 
     &__top__link{
-        @include fontAll(16px,600,$link);
+        @include fontAll(1rem,600,$link);
         line-height: 125%;
         @extend%transition;
 
@@ -69,20 +67,10 @@ body{
         }
     }
 
-    &__top__cart__link{
-        @include fontAll(16px,600,$link);
-        line-height: 125%;
-        display: flex;
-        align-items:center;
-        grid-gap: 5px;
-        span{
-            color: $red;
-        }
-    }
-
     &__burger__link{
-        @include fontAll(16px,600,$red);
+        @include fontAll(1.125rem,600,$link);
         line-height: 100%;
+        background-color:transparent;
     }
 
     &__burger{
@@ -91,28 +79,8 @@ body{
 
     // ------------------------------------
 
-    &__bottom{
-        background-color: $title;
-        width: 100%;
-        height: auto;
-        padding: 30px 0;
-    }
-
-    &__bottom__list{
-        display: flex;
-        align-items:center;
-        justify-content: space-between;
-        grid-gap: 20px;
-    }
-
-    &__bottom__list__item{
-        display: flex;
-        align-items:center;
-        grid-gap: 50px;
-    }
-
     &__bottom__sources{
-        @include fontAll(14px,700,$max);
+        @include fontAll(0.875rem,700,$max);
         text-transform: uppercase;
         line-height: 100%;
         display: flex;
@@ -121,17 +89,22 @@ body{
         padding: 18px 30px;
         background-color: $red;
         width: fit-content;
-        height: 50px;
         span{
             svg{
                 width: 25px;
                 height: 17px;
             }
         }
+
+        @extend%transition;
+
+        &:hover{
+            background-color:#9f223f;
+        }
     }
 
     &__bottom__electronic{
-        @include fontAll(14px,700,$max);
+        @include fontAll(0.875rem,700,$max);
         text-transform: uppercase;
         line-height: 100%;
         display: flex;
@@ -147,43 +120,6 @@ body{
                 height: 10px;
             }
         }
-    }
-
-    &__bottom__form{
-        width: 340px;
-        display: flex;
-        align-items:center;
-        position: relative;
-    }
-
-    &__bottom__input{
-        background-color:$max;
-        width: 100%;
-        height: 40px;
-        border:none;
-        outline: none;
-        padding: 10px 35px 10px 20px;
-        @include fontAll(14px,600,#ACACAC);
-        line-height: 130%;
-
-
-        &::placeholder{
-            @include fontAll(14px,600,#ACACAC);
-            line-height: 130%;
-        }
-    }
-
-    &__bottom__button{
-        @include fontAll(16px,600,$red);
-        position: absolute;
-        top: 50%;
-        right: 15px;
-        background-color:transparent;
-        transform: translate(0,-50%);
-        -webkit-transform: translate(0,-50%);
-        -moz-transform: translate(0,-50%);
-        -ms-transform: translate(0,-50%);
-        -o-transform: translate(0,-50%);
     }
 
     &__bottom__item{
@@ -213,13 +149,28 @@ body{
     }
 
     &__bottom__link{
-        @include fontAll(16px,400,$link);
+        @include fontAll(1rem,400,$text);
         line-height: 130%;
         @extend%transition;
 
         &:hover{
             color:$red;
         }
+    }
+
+    &__top__cart__link{
+        @include fontAll(1rem,500,$link);
+        line-height: 135%;
+        background-color:transparent;
+        display: flex;
+        align-items:center;
+        grid-gap: 10px;
+    }
+
+    &__top__cart{
+        display: flex;
+        align-items:center;
+        grid-gap: 40px;
     }
 
     .modal-overlay{
@@ -249,289 +200,310 @@ body{
 
 // header end
 
+// slikFon start
 
-// slider start
-
-.slider{
-    position: relative;
+.slikFon{
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    max-height: 2000px;
+    min-height: 250px;
     margin-bottom: 60px;
 
-    &__item{
-        display: grid;
-        grid-template-columns: 230px auto;
-    }
-
-    &__album{
-        @include fiximg(100%,300px,true);
-        img{
-            max-height: 300px;
-        }
-    }
-
-    &__item__img{
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-position:center top;
-        position: relative;
-    }
-    
-    &__item__text{
-        display: inline-block;
-        background-color:rgba(32, 32, 32, 0.8);
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        padding: 25px 75px 25px 30px;
-    }
-
-    &__title__h2{
-        @include fontAll(24px,800,$max);
-        text-transform: uppercase;
-        line-height: 130%;
-        margin-bottom: 5px;
-    }
-
-    &__title__h3{
-        @include fontAll(16px,400,$max);
-        line-height: 130%;
+    .container{
+        height: 100%;
     }
 
     &__cart{
-        display: grid;
-        grid-template-columns: auto 380px;
-    }
+        height: 100%;
+        padding: 80px 0;
 
-    &__menu{
-        overflow-y: scroll;
-        background-color:$max;
-        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.12);
-        padding: 20px 0;
-        height: 300px;
-
-        li{
-           padding: 15px 30px;
-           position: relative;
-        }
-
-        .active{
-            background-color:$red;
-            a{
-                color:$max;
-            }
-
-            &::after{
-                content: "";
-                display: block;
-                width: 24px;
-                height: 24px;
-                background-image: url("data:image/svg+xml,%3Csvg width='18' height='22' viewBox='0 0 18 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-5.24537e-07 11L18 0.607696L18 21.3923L-5.24537e-07 11Z' fill='%23A20025'/%3E%3C/svg%3E");
-                position: absolute;
-                top: 50%;
-                left: -20px;
-                background-repeat:no-repeat;
-                background-size:cover;
-                background-position:center left;
-                transform: translate(0,-50%);
-                -webkit-transform: translate(0,-50%);
-                -moz-transform: translate(0,-50%);
-                -ms-transform: translate(0,-50%);
-                -o-transform: translate(0,-50%);
-            }
-        }
-
-
-    }
-
-    &__menu__link{
-        @include fontAll(18px,600,$text);
-        line-height: 120%;
-    }
-}
-
-.slider__menu::-webkit-scrollbar {
-    width: 5px;
-    height: 8px;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-}
-
-.slider__menu::-webkit-scrollbar-track {
-    background: $fon;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-}
-
-.slider__menu::-webkit-scrollbar-thumb {
-    background: rgba(162, 0, 37, 0.6);
-    height: 8px;
-    border-radius: 50px;
-}
-
-// slider end
-
-
-// written_documents start
-
-.written_documents{
-    position: relative;
-    margin-bottom: 60px;
-
-    &__item{
-        background-color:$fon;
-        padding: 25px 30px;
-        @extend%transition;
-
-        &:hover{
-            background-color:$red;
-
-            .written_documents__title__h2,
-            .written_documents__text,
-            .written_documents__link{
-                color:$max;
-            }
-        }
-    }
-
-    &__title__h2{
-        @include fontAll(18px,700,$title);
-        line-height: 130%;
-        margin-bottom: 5px;
-        @extend%transition;
-
-        max-height: 24px;
-        -webkit-line-clamp: 1;
-        position: relative;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: normal;
     }
 
     &__text{
-        @include fontAll(14px,400,$text);
-        line-height: 130%;
-        margin-bottom: 10px;
-
-        max-height: 18px;
-        -webkit-line-clamp: 1;
-        position: relative;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: normal;
-        @extend%transition;
-    }
-
-    &__link{
-        @include fontAll(12px,700,$red);
-        line-height: 130%;
-        text-transform:uppercase;
-        display: inline-block;
-        @extend%transition;
+        @include fontAll(1.375rem,600,$max);
+        line-height: 135%;
+        text-align: center;
+        a{
+            font-size: 100%;
+            border-bottom: 2px solid $max;
+        }
     }
 
     &__list{
         height: 100%;
-        .owl-prev{
-            width: 40px;
-            height: 40px;
-            background-color:rgba(36, 36, 36, 0.3);
-            position: absolute;
-            top: 50%;
-            left: -20px;
-            transform: translate(0,-50%);
-            -webkit-transform: translate(0,-50%);
-            -moz-transform: translate(0,-50%);
-            -ms-transform: translate(0,-50%);
-            -o-transform: translate(0,-50%);
-            @extend%transition;
+        display: flex;
+        align-items:center;
+        justify-content: center; 
+        flex-direction: column;
+        grid-gap: 30px;
+    }
 
-            &::after{
-                content:"";
-                display: block;
-                width: 5px;
-                height: 10px;
-                background-image: url("data:image/svg+xml,%3Csvg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 1L1 6L6 11' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-                background-repeat: no-repeat;
-                background-size:cover;
-                background-position:center center;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                -webkit-transform: translate(-50%,-50%);
-                -moz-transform: translate(-50%,-50%);
-                -ms-transform: translate(-50%,-50%);
-                -o-transform: translate(-50%,-50%);
-            }
+    &__form{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
 
-            &:hover{
-                background-color:#242424;
-            }
-
-            span{
-                display: none;
-            }
-        }
-
-        .owl-next{
-            width: 40px;
-            height: 40px;
-            background-color:rgba(36, 36, 36, 0.3);
-            position: absolute;
-            top: 50%;
-            right: -20px;
-            transform: translate(0,-50%);
-            -webkit-transform: translate(0,-50%);
-            -moz-transform: translate(0,-50%);
-            -ms-transform: translate(0,-50%);
-            -o-transform: translate(0,-50%);
-            @extend%transition;
-
-            &::after{
-                content:"";
-                display: block;
-                width: 5px;
-                height: 10px;
-                background-image: url("data:image/svg+xml,%3Csvg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L1 11' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-                background-repeat: no-repeat;
-                background-size:cover;
-                background-position:center center;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                -webkit-transform: translate(-50%,-50%);
-                -moz-transform: translate(-50%,-50%);
-                -ms-transform: translate(-50%,-50%);
-                -o-transform: translate(-50%,-50%);
-            }
-
-            &:hover{
-                background-color:#242424;
-            }
-
-            span{
-                display: none;
-            }
-        }
-
-        .owl-dots{
-            display: none;
+    &__form__input{
+        width: 450px;
+        height: 50px;
+        background-color:$max;
+        padding: 10px 30px;
+        @include fontAll(0.875rem,500,$text);
+        line-height: 135%;
+        outline: none;
+        border:none;
+        &::placeholder{
+            @include fontAll(0.875rem,500,#ACACAC);
         }
     }
-} 
 
-// written_documents end
+    &__form__button{
+        @include fontAll(1.125rem,500,$red);
+        line-height: 100%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color:$max;
+    }
 
+    &__all__link{
+        @include fontAll(1rem,700,$max);
+        line-height: 135%;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 16px 28px;
+        background-color:$red;
+        display: inline-block;
+        @extend%transition;
+
+        &:hover{
+            background-color:#9f223f;
+        }
+    }
+
+    &__cart__list__text{
+        @include fontAll(1.375rem,500,$max);
+        line-height: 140%;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        text-align: center;
+        span{
+           font-size: 1.5rem;
+           font-weight: 700;
+        }
+    }
+
+    &__cart__list{
+        display: flex;
+        align-items: flex-start;
+        li{
+            position: relative;
+            max-width: 500px;
+        }
+
+        li+li{
+            margin-left: 30px;
+            padding-left: 30px;
+            &::after{
+                content: "";
+                display: block;
+                width: 1px;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: -0.5px;
+                background-color:rgba(255, 255, 255, 0.6);
+            }
+        }
+    }
+}
+
+// slikFon end
+
+// maps start
+
+.maps{
+    position: relative;
+    margin-bottom: 60px;
+
+    &__list{
+        display: grid;
+        grid-template-columns: 260px auto;
+        grid-gap: 80px;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &__menu{
+        background-color:#F1F1F1;
+        padding: 25px 30px;
+        width: 100%;
+        height: auto;
+        color:$red;
+        font-size: 25px;
+        line-height: 100%;
+        li+li{
+            margin-top: 15px;
+        }
+    }
+
+    &__link{
+        @include fontAll(1.125rem,400,$text);
+        line-height: 130%;
+        @extend%transition;
+        &:hover{
+            color:$red;    
+        }
+    }
+
+    &__svg{
+        svg{
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            object-position: center center;
+        }
+    }
+
+    .search_results_in__title__h2{
+        display: flex;
+        align-items:flex-start;
+        grid-gap: 10px;
+        span{
+            width: 20px;
+            height: 24px;
+            fill:#242424;
+            opacity: 0.3;
+            svg{
+                width: 20px;
+                height: 24px;
+                fill:#242424;
+            }
+        }
+    }
+
+    &__table{
+        table{
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            tr{
+                display: grid;
+                grid-template-columns: 200px 300px 300px 200px;
+                justify-content: space-between;
+                align-items: start;
+                padding: 10px 0px;
+                border-bottom:1px solid #DBDBDB;
+                th{
+                    text-align: left;
+                    @include fontAll(1.125rem,600,$title);
+                    line-height: 135%;
+                }
+
+                td{
+                    text-align: left;
+                    @include fontAll(1.125rem,400,$title);
+                    line-height: 135%;
+                }
+
+                td + td{
+                    color:$red;
+                }
+
+                td + td + td{
+                    color:$title;
+                }
+            }
+
+            tr+tr{
+                border:none;
+            }
+        }
+    }
+
+    &__readAlot{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+        align-items: start;
+        margin-top: 30px;
+    }
+
+    &__readAlot__item{
+        display: grid;
+        grid-template-columns: 200px auto;
+        align-items: start;
+        grid-gap: 30px;
+        background-color:$max;
+        border: 1px solid #DBDBDB;
+    }
+
+    &__readAlot__img{
+        @include fiximg(100%,100%,true);
+        img{
+            min-height: 150px;
+            max-height: 300px;
+            object-position: center center;
+        }
+    }
+
+    &__readAlot__item__text{
+        padding: 20px 20px 20px 0px;
+    }
+
+    &__readAlot__menu{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        grid-gap: 10px;
+    }
+
+    &__readAlot__title{
+        @include fontAll(1rem,400,$title);
+        line-height: 135%;
+
+        span{
+            font-weight: 600;
+        }
+    }
+
+    &__readAlot__list{
+        display: flex;
+        align-items:flex-start;
+        flex-wrap: wrap;
+        grid-gap: 10px;
+        margin-top: 30px;
+    }
+
+    &__readAlot__list__link{
+        @include fontAll(0.875rem,400,$title);
+        line-height: 125%;
+        display: flex;
+        align-items:center;
+        grid-gap: 8px;
+
+        span{
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            color:$red;
+            text-align: center;
+            background-color:$fon;
+        }
+    }
+}
+
+// maps end
 
 // written_sources start
 
@@ -547,7 +519,7 @@ body{
     }
 
     &__link{
-        @include fontAll(14px,700,$red);
+        @include fontAll(0.875rem,700,$red);
         line-height: 130%;
         text-transform: uppercase;
         display: inline-block;
@@ -555,7 +527,6 @@ body{
 }
 
 // written_sources end
-
 
 // historical_documents start
 
@@ -568,7 +539,6 @@ body{
 }
 
 // historical_documents end
-
 
 // history_uzbekistan start
 
@@ -611,14 +581,14 @@ body{
     }
 
     &__title__h2{
-        @include fontAll(30px,800,$max);
+        @include fontAll(1.875rem,800,$max);
         line-height: 130%;
         margin-bottom: 10px;
         text-transform: uppercase;
     }
 
     &__data{
-        @include fontAll(16px,400,$max);
+        @include fontAll(1rem,400,$max);
         line-height: 100%;
         margin-bottom: 25px;
     }
@@ -626,8 +596,13 @@ body{
     &__link{
         padding: 15px 30px;
         background-color:$red;
-        @include fontAll(14px,600,$max);
+        @include fontAll(0.875rem,600,$max);
         display: inline-block;
+        @extend%transition;
+
+        &:hover{
+            background-color:#9f223f;
+        }
     }
 
     &__list{
@@ -697,7 +672,6 @@ body{
 
 // history_uzbekistan end
 
-
 // electronic_library start
 
 .electronic_library{
@@ -705,40 +679,16 @@ body{
     margin-bottom: 60px;
 
     &__name{
-        @include fontAll(14px,600,$red);
+        @include fontAll(0.875rem,600,$red);
         line-height: 130%;
         padding: 0 20px;
-        margin-bottom: 10px;
+        margin-bottom: 60px;
+        display: inline-block;
     }
 
     .search_results_in__carusel__cart__item{
         padding-bottom: 0;
         margin: 15px 10px;
-    }
-
-    &__menu{
-        display: flex;
-        align-items:center;
-        li{
-            width: 44px;
-            height: 44px;
-            background-color:$fon;
-            display: flex;
-            align-items:center;
-            justify-content: center;
-        }
-
-        li + li{
-            background-color:$red;
-        }
-    }
-
-    &__link{
-        @include fiximg(18px,18px,false);
-        img{
-            object-position: center;
-            max-height: 18px;
-        }
     }
 
     &__list{
@@ -808,7 +758,6 @@ body{
 
 // electronic_library end
 
-
 // news start
 
 .news{
@@ -833,7 +782,7 @@ body{
     }
 
     &__title__h3{
-        @include fontAll(30px,800,$title);
+        @include fontAll(1.875rem,800,$title);
         line-height: 135%;
         padding-left: 30px;
         padding-right: 20px;
@@ -851,7 +800,7 @@ body{
     }
 
     &__data{
-        @include fontAll(12px,600,$red);
+        @include fontAll(0.75rem,600,$red);
         line-height: 100%;
         padding-left: 30px;
         padding-right: 20px;
@@ -885,7 +834,7 @@ body{
     }
 
     &__cart__title__h3{
-        @include fontAll(14px,600,$text);
+        @include fontAll(0.875rem,600,$text);
         line-height: 135%;
 
         min-height: 38px;
@@ -941,7 +890,6 @@ body{
 
 // news end
 
-
 // tarixmanba start
 
 .tarixmanba{
@@ -950,7 +898,7 @@ body{
 
     &__text{
         margin-top: 20px;
-        @include fontAll(16px,400,$title);
+        @include fontAll(1rem,400,$title);
         line-height: 135%;
         text-align: justify;
     }
@@ -962,120 +910,10 @@ body{
 
 .footer{
     position: relative;
-    background-color:#202020;
+    background-color:#A07048;
     width: 100%;
     height: auto; 
-    padding-top: 60px;
-
-    &__top__list{
-        display: flex;
-        align-items:flex-start;
-        justify-content: space-between;
-        grid-gap: 20px;
-        padding-bottom: 60px;
-    }
-
-    &__top__item{
-        display: flex;
-        align-items:flex-start;
-        grid-gap: 150px;
-    }
-
-    &__top__brind{
-        display: flex;
-        flex-direction: column;
-        grid-gap: 10px;
-
-        a{
-            @include fiximg(140px,45px,true);
-            border-radius: 6px;
-            -webkit-border-radius: 6px;
-            -moz-border-radius: 6px;
-            -ms-border-radius: 6px;
-            -o-border-radius: 6px;
-            img{
-                max-height: 45px;
-                object-position: center center;
-                border-radius: 6px;
-                -webkit-border-radius: 6px;
-                -moz-border-radius: 6px;
-                -ms-border-radius: 6px;
-                -o-border-radius: 6px;
-            }
-        }
-    }
-
-    &__top__menu{
-        display: flex;
-        flex-direction: column;
-        align-items:flex-start;
-        grid-gap: 20px;
-    }
-
-    &__top__link{
-        @include fontAll(14px,600,#B6B6B6);
-        line-height: 125%;
-        @extend%transition;
-
-        &:hover{
-            color:$max;
-        }
-    }
-
-    &__top__contacts{
-        display: flex;
-        flex-direction: column;
-        align-items:flex-end;
-        grid-gap: 20px;
-    }
-
-    &__top__contacts__link{
-        @include fontAll(16px,600,$max);
-        line-height: 125%;
-        display: flex;
-        align-items:center;
-        grid-gap: 5px;
-
-        span{
-            font-size: 14px;
-        }
-    }
-
-    &__top__icons{
-        margin-top: 30px;
-        display: flex;
-        align-items:flex-end;
-        justify-content: end;
-        grid-gap: 20px;
-    }
-
-    &__top__icons__link{
-        background-color:rgba(255, 255, 255, 0.2);
-        width: 34px;
-        height: 34px;
-        display: flex;
-        align-items:center;
-        justify-content: center;
-        @include fontAll(16px,600,$max);
-        line-height: 100%;
-
-        border-radius: 50px;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        -ms-border-radius: 50px;
-        -o-border-radius: 50px;
-        @extend%transition;
-
-        &:hover{
-            background-color:$max;
-            color:#202020;
-        }
-    }
-
-    &__bottom{
-        border-top:1px solid rgba(255, 255, 255, 0.2);
-        padding: 20px 0;
-    }
+    padding:20px 0;
 
     &__bottom__list{
         display: flex;
@@ -1086,20 +924,73 @@ body{
     }
 
     &__bottom__title__h4{
-        @include fontAll(16px,400,#B6B6B6);
+        @include fontAll(1rem,400,$max);
         text-align: center;
         line-height: 135%;
+        a{
+            font-size: 110%;
+            font-weight: 500;
+        }
     }
 }
 
 // footer end
 
+@media (max-width:1450px){
+    .header__top__list{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    .header__top__list__item{
+        display: grid;
+        grid-template-columns: 250px min-content auto;
+    }
+
+    .header__top__menu{
+        justify-content: space-between;
+        grid-gap: 15px;
+    }
+
+    .maps__table{
+        overflow-x: scroll;
+        margin-bottom: 20px;
+
+        .table{
+            width: 1400px;
+        }
+    }    
+
+    .maps__table::-webkit-scrollbar {
+        width: 5px;
+        height: 8px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    
+    .maps__table::-webkit-scrollbar-track {
+        background: $fon;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    
+    .maps__table::-webkit-scrollbar-thumb {
+        background: rgba(162, 0, 37, 0.6);
+        height: 8px;
+        border-radius: 50px;
+    }
+}
 
 @media (max-width:1260px){
     .header__top__list,
-    .header__bottom__list,
     .search_results__list,
-    .footer__top__list,
     .footer__bottom__list,
     .search_results_in__cart,
     .search_results_in__cart__max,
@@ -1107,33 +998,30 @@ body{
     .search_results_in__map_in__list,
     .search_results_in__video__cart,
     .search_results_in__virtual_tur__list,
-    .slider__cart,
     .written_sources__cart,
     .historical_documents__cart,
     .electronic_library__cart,
     .news__cart,
-    .tarixmanba__cart{
+    .tarixmanba__cart,
+    .maps__cart,
+    .slikFon__cart{
         margin-left: 30px;
         margin-right: 30px;
     }
 
-    .search_results__title__h3,
-    .search_results__title__h2,
-    .slider__menu__link{
-        font-size: 16px;
+    .maps__list {
+        grid-gap: 60px;
     }
 
-    .written_documents__title__h2{
-        font-size: 16px;
-        max-height: 20px;
+    .search_results__title__h3,
+    .search_results__title__h2{
+        font-size: 1rem;
     }
 
     .search_results__title__h5,
-    .search_results__title__h4,
     .footer__bottom__title__h4,
-    .history_uzbekistan__link,
-    .slider__title__h3{
-        font-size: 14px;
+    .history_uzbekistan__link{
+        font-size: 0.875rem;
     }
 
     .search_results__list{
@@ -1142,11 +1030,7 @@ body{
 
     .history_uzbekistan__title__h2,
     .news__title__h3{
-        font-size: 28px;
-    }
-
-    .slider__title__h2{
-        font-size: 22px;
+        font-size: 1.75rem;
     }
 
     .news__title__h3{
@@ -1156,28 +1040,21 @@ body{
 }
 
 @media (max-width:1200px){
-    .slider,
-    .written_documents,
     .written_sources,
     .historical_documents,
     .electronic_library,
     .news,
-    .tarixmanba{
+    .tarixmanba,
+    .slikFon,
+    .maps,
+    .aboutTop,
+    .search_results__result{
         margin-bottom: 30px;
     }
 
-    .written_documents__list .owl-next,
-    .written_documents__list .owl-prev{
-        width: 30px;
-        height: 30px;
-    }
-
-    .written_documents__list .owl-next{
-        right: -15px;
-    }
-
-    .written_documents__list .owl-prev{
-        left: -15px;
+    .search_results__pagination,
+    .search_results_in .written_sources{
+        margin-top: 30px;
     }
 }
 
@@ -1191,7 +1068,7 @@ body{
 
     .history_uzbekistan__title__h2,
     .news__title__h3{
-        font-size: 26px;
+        font-size: 1.625rem;
     }
 
     .news__title__h3{
@@ -1199,67 +1076,31 @@ body{
         max-height: 70px;
     }
 
-    .footer{
-        padding-top: 30px;
-    }
-
-    .footer__top__list{
-        padding-bottom: 30px;
+    .slikFon__cart{
+        padding: 0px;
+        padding-top: 60px;
     }
 
     .search_results__list{
         grid-template-columns: auto;
     }
 
-    .footer__top__contacts__link {
-        font-size: 14px;
+    .maps__readAlot{
+        grid-template-columns: 1fr;
     }
 
     .header__bottom__list__item{
         grid-gap: 30px;
     }
 
+    .header__top__link{
+        color:$text;
+    }
+
     .search_results__title__h2{
-        cursor: pointer;
-        margin-bottom: 0;
         span{
-            display: block;
-            font-size: 14px;
+            font-size: 0.875rem;
         }
-    }
-
-    .search_results__aside__item{
-        width: 0;
-        height: 0;
-        overflow: hidden;
-        opacity: 0;
-    }
-
-    .search_results__aside{
-        .active{
-            .search_results__title__h2 span{
-                transform: rotate(180deg);
-                -webkit-transform: rotate(180deg);
-                -moz-transform: rotate(180deg);
-                -ms-transform: rotate(180deg);
-                -o-transform: rotate(180deg);
-            }
-
-            .search_results__title__h2{
-                margin-bottom: 15px;
-            }
-
-            .search_results__aside__item{
-                width: 100%;
-                height: auto;
-                overflow: initial;
-                opacity: 1;
-            }
-        }
-    }
-
-    .footer__top__item{
-        grid-gap: 100px;
     }
 
     .header__burger{
@@ -1271,17 +1112,6 @@ body{
         align-items:flex-start;
         justify-content: initial;
         grid-gap: 20px;
-    }
-
-    .header__top__cart__link{
-        font-size: 0;
-        span{
-            font-size: 16px;
-        }
-    }
-
-    .header__top__cart__menu{
-        grid-gap: 30px;
     }
 
     .header__top__menu__top{
@@ -1300,10 +1130,6 @@ body{
         -o-transform: translateX(-105%);
     }
 
-    .slider__cart{
-        grid-template-columns: auto 300px;
-    }
-
     .news__list{
         grid-template-columns: 1fr 1fr 280px;
         grid-gap: 20px;
@@ -1312,13 +1138,27 @@ body{
     .news__list{
         margin-top: 20px;
     }
+
+    .header__top__list__item {
+        display: grid;
+        grid-template-columns: 250px min-content 20px;
+        justify-content: center;
+    }
+
+    .header__top__cart{
+        justify-content: center;
+    }
+
+    .slikFon__text{
+        font-size: 1.25rem;
+    }
+
+    .slikFon__cart__list__text {
+        font-size: 1.25rem;
+    }
 }
 
 @media (max-width:950px){
-    .slider__cart {
-        grid-template-columns: auto;
-    }
-
     .news__list {
         display: grid;
         grid-template-areas: 'news__item_1 news__item_1 news__item_2 news__item_2' 
@@ -1335,13 +1175,17 @@ body{
         }
     }
 
+    .written_sources__list__cart{
+        grid-gap: 20px;
+    }
+
     .news__cart__list{
         grid-area: news__item_3;
         height:330px;
     }
 
     .history_uzbekistan__title__h2, .news__title__h3 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .news__title__h3{
@@ -1355,25 +1199,13 @@ body{
         justify-content: space-between;
         margin-bottom: 20px;
     }
-    .header__bottom__list{
-        display: block;
-    }
 
-    .header__bottom__form{
-        width: 100%;
-    }
-
-    .search_results__colors{
-        width: 20px;
-        height: 20px;
-    }
-
-    .footer__top__item{
-        grid-gap: 60px;
+    .search_results__result__title__h2 {
+        font-size: 1.375rem;
     }
 
     .history_uzbekistan__title__h2, .news__title__h3 {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
     .news__title__h3{
@@ -1385,22 +1217,98 @@ body{
         height: 250px !important;
     }
 
-    .slider__album{
-        height: 250px;
+    .maps__list{
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
     }
 
-    .slider__item {
-        grid-template-columns: 180px auto;
+    .slikFon__text {
+        font-size: 1.125rem;
     }
 
-    .slider__title__h2 {
-        font-size: 20px;
+    .slikFon__cart__list__text {
+        font-size: 1.125rem;
+    }
+
+    .slikFon__all__link,
+    .header__bottom__sources,
+    .history_uzbekistan__link,
+    .search_results__submit{
+        font-size: 0.875rem;
+        padding: 14px 20px;
     }
 }
 
 @media (max-width:650px){
     .search_results__item{
         grid-template-columns: auto;
+        grid-gap: 20px;
+    }
+
+    .search_results__aside form{
+        padding-bottom: 20px;
+    }
+
+    .search_results__menu {
+        margin-top: 20px;
+    }
+
+    .search_results__result__title__h2 {
+        font-size: 1.25rem;
+    }
+
+    .header__top__list__item,
+    .header__top__cart,
+    .maps__readAlot__item{
+        grid-gap: 20px;
+    }
+
+    .footer{
+        padding: 15px 0px;
+    }
+
+    .slikFon__form{
+        width: 100%;
+    }
+
+    .slikFon__form__input{
+        width: 100%;
+        height: 40px;
+    }
+
+    .slikFon__form__button{
+        width: 40px;
+        height: 40px;
+    }
+
+    .maps__menu {
+        padding: 20px 25px;
+    }
+
+    .maps__link {
+        font-size: 1rem;
+    }
+
+    .maps__table table tr th,
+    .maps__table table tr td{
+        font-size: 1rem;
+    }
+
+    .slikFon__cart__list{
+        flex-direction: column;
+        grid-gap: 10px;
+    }
+
+    .slikFon__cart__list li + li{
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    .slikFon__cart__list li + li::after{
+        display: none;
+    }
+
+    .slikFon__list{
         grid-gap: 20px;
     }
 
@@ -1414,15 +1322,10 @@ body{
         padding-right: 25px;
     }
 
-    .search_results__list__max{
+    .search_results__cart__item{
         margin-top: 20px;
         padding-left: 20px;
         padding-right: 25px;
-        padding-bottom: 20px;
-    }
-
-    .search_results__form {
-        padding: 15px;
     }
 
     .search_results__aside .search_results__form + .search_results__form {
@@ -1439,25 +1342,8 @@ body{
         height: 12px;
     }
 
-    .footer__top__menu{
-        display: none;
-    }
-
-    .footer__top__list{
-        display: block;
-    }
-
-    .footer__top__item{
-        grid-gap: 20px;
-        justify-content: space-between;
-    }
-
     .footer__bottom__title__h4{
         width: 100%;
-    }
-
-    .footer__bottom {
-        padding: 15px 0;
     }
 
     .news__list {
@@ -1481,45 +1367,73 @@ body{
         top: -40px;
     }
 
-    .written_documents__item,
-    .slider__item__text{
-        padding: 20px;
+    .search_results__item__link{
+        border-right: none;
+        border-bottom: 1px solid #DBDBDB;
+    }
+
+    .search_results__result__input{
+        height: 40px;
+        padding: 10px 20px;
+    }
+
+    .search_results__result__button{
+        height: 40px;
+        width: 40px;
     }
 }
 
 @media (max-width:550px){
-    .header__top__list{
-        display: block;
-    }
-
     .header__top__list__item{
         justify-content: center;
-    }
-
-    .header__top__cart__menu{
-        justify-content: space-between;
-        grid-gap: 10px;
-        margin-top: 15px;
     }
 
     .header__top__menu__top {
         width: 300px;
     }
 
-    .slider__item {
-        grid-template-columns: 150px auto;
-    }
-
-    .slider__album {
-        height: 200px;
-    }
-
-    .slider__menu{
-        height: 220px;
-    }
-
     .news__item__text {
         padding-bottom: 30px;
+    }
+
+    .header__bottom__mein{
+        right: 0px;
+        left: auto;
+    }
+
+    .written_sources__list__cart {
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width:500px){
+    .header__bottom__sources{
+        font-size: 0px;
+        padding: 10px 10px 10px 5px;
+    }
+
+    .header__top__logo{
+        width: 100%;
+    }
+
+    .header__top__list__item {
+        grid-template-columns: auto min-content min-content;
+    }
+
+    .header__top__cart__link {
+        font-size: 0.875rem;
+    }
+
+    .maps__readAlot__item{
+        grid-template-columns: 1fr;
+    }
+
+    .maps__readAlot__item__text{
+        padding: 0px 20px 20px 20px;
+    }
+
+    .maps__readAlot__list {
+        margin-top: 15px;
     }
 }
 
@@ -1534,39 +1448,9 @@ body{
         width: 100%;
         justify-content: center;
     }
-
-    .slider__item {
-        grid-template-columns: auto;
-    }
-
-    .slider__item__img{
-        height: 250px;
-    }
-
-    .slider__album img{
-        object-fit: contain;
-        object-position: left center;
-    }
-
-    .slider__album {
-        height: auto;
-    }
 }
 
 @media (max-width:400px){
-    .footer__top__icons{
-        margin-top: 20px;
-    }
-
-    .footer__top__brind a{
-        width: 100px;
-        height: 35px;
-    }
-
-    .footer__top__item{
-        grid-gap: 10px;
-    }
-
     .header__top__menu__top {
         width: 280px;
     }

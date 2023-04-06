@@ -1,0 +1,101 @@
+// writtenSources start
+
+.writtenSources{
+    position: relative;
+
+    &__title__h2{
+        @include fontAll(1.125rem,600,$title);
+        line-height: 135%;
+        padding: 10px 30px 15px 30px;
+        background-color:#F8F8F8;
+        width: 100%;
+        span{
+            display: none;
+        }
+    }
+
+    &__aside__item{ 
+        padding: 15px 30px;
+        background-color:rgba(0, 0, 0, 0.06);
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+
+        .input-wrap-max {
+            display: grid;
+            grid-template-columns: auto min-content;
+            justify-content: space-between;
+            justify-items: start;
+            position: relative;
+            grid-gap: 10px;
+            cursor: pointer;
+            @extend%transition;
+            &:hover{
+                .writtenSources__title__h5{
+                    color:$red;
+                }
+            }
+        }
+    }
+
+    &__title__h5{
+        @include fontAll(1.125rem,400,$title);
+        line-height: 135%;
+        @extend%transition;
+    }
+
+    &__item{
+        display: grid;
+        grid-template-columns: max-content min-content;
+        grid-gap: 10px;
+    }
+
+    &__title__h3{
+        @include fontAll(1.625rem,700,$title);
+        line-height: 135%;
+    }
+
+    &__form{
+        margin-top: 30px;
+    }
+
+    &__link{
+        @include fontAll(0.875rem,700,$red);
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        span{
+            margin-left: 5px;
+        }
+    }
+}
+
+// writtenSources end
+
+@media (max-width:1200px){
+    .writtenSources__title__h3{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:650px){
+    .writtenSources__title__h3{
+        font-size: 1.375rem;
+    }
+
+    .writtenSources__title__h5 {
+        font-size: 1rem;
+    }
+
+    .writtenSources__title__h2{
+        padding: 10px 20px;
+    }
+
+    .writtenSources__aside__item {
+        grid-gap: 15px;
+        padding: 10px 20px;
+    }
+
+    .writtenSources__form {
+        margin-top: 20px;
+    }
+}

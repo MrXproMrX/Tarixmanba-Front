@@ -9,7 +9,7 @@
         grid-template-columns: 550px auto;
         grid-gap: 60px;
         margin-top: 30px;
-        align-items: start;
+        align-items: center;
         margin-bottom: 50px;
     }
 
@@ -31,40 +31,56 @@
     }
 
     &__title__h2{
-        @include fontAll(36px,700,$title);
-        line-height: 135%;
-    }
-
-    &__title__h3{
-        @include fontAll(22px,700,$title);
+        @include fontAll(2.25rem,700,$title);
         line-height: 135%;
     }
 
     &__title__h4{
-        @include fontAll(14px,400,$text);
+        @include fontAll(0.875rem,400,$text);
         line-height: 130%;
         text-transform: uppercase;
-        margin-bottom: 5px;
     }
 
     &__title__h5{
-        @include fontAll(18px,600,$text);
+        @include fontAll(1.125rem,600,$text);
         line-height: 130%;
     }
 
     &__cart__item{
+        display: flex;
+        align-items:center;
+        grid-gap: 5px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .search_results__colors{
         margin-top: 20px;
+    }
+
+    .search_results_in__carusel__cart__icons{
+        padding: 0px;
+        margin-top: 20px;
+    }
+
+    .written_sources{
+        margin-top: 60px;
+
+        .search_results_in__carusel__cart__icons{
+            padding-left: 20px;
+            padding-right: 50px;
+        }
     }
 
     // ----------------------------
 
     &__max__title__h2{
-        @include fontAll(30px,700,$title);
+        @include fontAll(1.875rem,700,$title);
         line-height: 135%;
     }
 
     &__text{
-        @include fontAll(18px,400,$text);
+        @include fontAll(1.125rem,400,$text);
         line-height: 135%;
         text-align: justify;
         margin-top: 20px;
@@ -105,7 +121,7 @@
     }
 
     &__bottom__title__h3{
-        @include fontAll(24px,700,$title);
+        @include fontAll(1.5rem,700,$title);
         line-height: 135%;
     }
 
@@ -116,11 +132,11 @@
         margin-top: 20px;
         list-style-type: decimal;
         padding-left: 20px;
-        @include fontAll(18px,600,$red);
+        @include fontAll(1.125rem,600,$red);
     }
 
     &__bottom__link{
-        @include fontAll(18px,600,$red);
+        @include fontAll(1.125rem,600,$red);
         line-height: 130%;
     }
 
@@ -147,14 +163,14 @@
     }
 
     &__map__title__h4{
-        @include fontAll(14px,400,$text);
+        @include fontAll(0.875rem,400,$text);
         line-height: 130%;
         text-transform: uppercase;
         margin-bottom: 5px;
     }
 
     &__map__link{
-        @include fontAll(18px,600,$red);
+        @include fontAll(1.125rem,600,$red);
         line-height: 130%;
         text-decoration-line: underline;
     }
@@ -164,242 +180,6 @@
         iframe{
             width: 100%;
             height: 400px;
-        }
-    }
-
-
-    // -------------------------
-
-    &__carusel{
-        margin-top: 60px;
-    }
-
-    &__carusel__list{
-        margin-top: 30px;
-        .slick-arrow{
-            font-size: 0;
-            @extend%transition;
-            &:hover{
-                background-color:rgba(36, 36, 36, 0.12);
-            }
-        }
-
-        .slick-prev {
-            background-color:rgba(36, 36, 36, 0.4);
-            width: 30px;
-            height: 30px;
-            position: absolute;
-            top: -60px;
-            right: 40px;
-            &::after{
-                content: "";
-                display: block;
-                width: 5px;
-                height: 10px;
-                background-repeat:no-repeat;
-                background-size:cover;
-                background-image:url(../foto/left.svg);
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                -webkit-transform: translate(-50%,-50%);
-                -moz-transform: translate(-50%,-50%);
-                -ms-transform: translate(-50%,-50%);
-                -o-transform: translate(-50%,-50%);
-            }
-        }
-
-        .slick-next {
-            background-color:rgba(36, 36, 36, 0.4);
-            width: 30px;
-            height: 30px;
-            position: absolute;
-            top: -60px;
-            right: 0px;
-            &::after{
-                content: "";
-                display: block;
-                width: 5px;
-                height: 10px;
-                background-repeat:no-repeat;
-                background-size:cover;
-                background-image:url(../foto/right.svg);
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                -webkit-transform: translate(-50%,-50%);
-                -moz-transform: translate(-50%,-50%);
-                -ms-transform: translate(-50%,-50%);
-                -o-transform: translate(-50%,-50%);
-            }
-        }
-    }
-
-    &__carusel__button{
-        display: flex;
-        align-items:center;
-        justify-content: center;
-        margin-top: 60px;
-    }
-
-    &__carusel__link{
-        @include fontAll(14px,700,$red);
-        text-transform:uppercase;
-        background-color:$fon;
-        padding: 16px 30px;
-        span{
-            margin-left: 5px;
-        }
-        @extend%transition;        
-
-        &:hover{
-            background-color:$red;
-            color:$max;
-        }
-    }
-
-    // -------------------------
-
-    &__form{
-        margin-top: 60px;
-        .search_results_in__bottom__title__h3{
-            text-align: center;
-        }
-    }
-
-    &__form__cart{
-        border: 1px solid #DBDBDB;
-        padding: 30px 40px;
-    }
-
-    &__form__textarea{
-        resize: none;
-        width: 100%;
-        height: 160px;
-        border:none;
-        outline: none;
-        padding: 15px 20px;
-        background-color:$fon;
-        @include fontAll(14px,400,rgba(36, 36, 36, 0.6));
-        line-height: 130%;
-
-        &::placeholder{
-            @include fontAll(14px,400,rgba(36, 36, 36, 0.6));
-            line-height: 130%;
-        }
-    }
-
-    &__form__list{
-        width: 0;
-        height: 0;
-        overflow: hidden;
-        outline: 0;
-        @extend%transition;
-    }
-
-    &__form__button{
-        @include fontAll(14px,600,$red);
-        background-color:$fon;
-        padding: 15px 30px;
-        margin-top: 30px;
-        margin-left: 50%;
-        transform: translate(-50%,0);
-        -webkit-transform: translate(-50%,0);
-        -moz-transform: translate(-50%,0);
-        -ms-transform: translate(-50%,0);
-        -o-transform: translate(-50%,0);
-
-        @extend%transition;        
-
-        &:hover{
-            background-color:$red;
-            color:$max;
-        }
-    }
-
-    &__button{
-        @include fontAll(14px,600,$red);
-        background-color:$fon;
-        padding: 15px 30px;
-        margin-top: 30px;
-        margin-left: 50%;
-        transform: translate(-50%,0);
-        -webkit-transform: translate(-50%,0);
-        -moz-transform: translate(-50%,0);
-        -ms-transform: translate(-50%,0);
-        -o-transform: translate(-50%,0);
-        @extend%transition;        
-
-        &:hover{
-            background-color:$red;
-            color:$max;
-        }
-        
-    }
-
-    &__form{
-        .active{
-            .search_results_in__button{
-                display: none;
-            }
-            .search_results_in__form__list{
-                margin-top: 30px;
-                width: 100%;
-                height: auto;
-                overflow: inherit;
-                outline: 1;
-            }
-        }
-    }
-
-    // -------------------------
-
-    &__contint{
-        margin-top: 60px;
-    }
-
-    &__contint__list{
-        .search_results_in__contint__item + .search_results_in__contint__item{
-            margin-top: 20px;
-        }
-    }
-
-    &__contint__title__h3{
-        @include fontAll(20px,600,$title);
-        line-height: 135%;
-        margin-bottom: 10px;
-    }
-
-    &__contint__text{
-        @include fontAll(18px,400,$text);
-        line-height: 135%;
-        text-align: justify;
-        h1,h2,h3,h4,h5,h6,em,strong{
-            font-size: 110%;
-            color:$title;
-            font-weight: 700;
-            font-style: normal;
-            display: inline-block;
-        }
-
-        a{
-            font-size: 110%;
-            color:$title;
-            font-weight: 700;
-            font-style: normal;
-            display: inline-block;
-        }
-
-        img{
-            width: 100%;
-            height: auto;
-            max-height: 500px;
-            object-fit: cover;
-            float: left;
-            margin-top: 15px;
-            margin-bottom: 15px;
         }
     }
 
@@ -433,7 +213,7 @@
     }
 
     &__map_in__link{
-        @include fontAll(16px,400,$text);
+        @include fontAll(1rem,400,$text);
         line-height: 130%;
         @extend%transition;
         &:hover{
@@ -512,7 +292,7 @@
     }
 
     &__virtual_tur__link{
-        @include fontAll(14px,600,$max);
+        @include fontAll(0.875rem,600,$max);
         line-height: 100%;
         padding: 15px 30px;
         display: inline-block;
@@ -526,7 +306,7 @@
     }
 
     &__virtual_tur__title{
-        @include fontAll(42px,400,$max);
+        @include fontAll(2.625rem,400,$max);
         line-height: 125%;
         display: flex;
         flex-direction: column;
@@ -534,7 +314,7 @@
         align-items:center;
         text-align: center;
         span{
-            @include fontAll(100px,600,$max);
+            @include fontAll(6.25rem,600,$max);
             line-height: 100%;
         }
     }
@@ -562,7 +342,7 @@
     }
 
     &__carusel__cart__title{
-        @include fontAll(18px,600,$text);
+        @include fontAll(1.125rem,600,$text);
         line-height: 130%;
         padding: 0 20px;
         margin-bottom: 10px;
@@ -578,7 +358,7 @@
     }
 
     &__carusel__cart__text{
-        @include fontAll(14px,400,$text);
+        @include fontAll(0.875rem,400,$text);
         line-height: 130%;
         padding: 0 20px;
         margin-bottom: 20px;
@@ -602,7 +382,7 @@
     }
 
     &__carusel__link__icons{
-        @include fontAll(12px,400,$text);
+        @include fontAll(0.75rem,400,$text);
         line-height: 120%;
         display: flex;
         align-items:center;
@@ -616,7 +396,7 @@
         width: 44px;
         height: 44px;
         position: absolute;
-        @include fontAll(14px,400,$red);
+        @include fontAll(0.875rem,400,$red);
         bottom: 0;
         right: 0;
         background-color:$fon;
@@ -734,9 +514,6 @@
 
     .search_results_in__map,
     .search_results_in__carusel,
-    .search_results_in__form,
-    .search_results_in__contint,
-    .search_results_in__carusel__button,
     .search_results_in__video__cart,
     .search_results_in__virtual_tur{
         margin-top: 30px;
@@ -747,33 +524,24 @@
     }
 
     .search_results_in__title__h2{
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .search_results_in__max__title__h2{
-        font-size: 26px;
-    }
-
-    .search_results_in__title__h3{
-        font-size: 20px;
+        font-size: 1.625rem;
     }
 
     .search_results_in__bottom__title__h3{
-        font-size: 22px;
-    }
-
-    .search_results_in__contint__title__h3{
-        font-size: 18px;
+        font-size: 1.375rem;
     }
 
     .search_results_in__title__h5,
     .search_results_in__bottom__link,
     .search_results_in__bottom__menu,
     .search_results_in__map__link,
-    .search_results_in__contint__text,
     .search_results_in__text,
     .search_results_in__carusel__cart__title{
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .search_results_in__carusel__cart__title{
@@ -781,15 +549,20 @@
     }
 
     .search_results_in__virtual_tur__title {
-        font-size: 36px;
+        font-size: 2.25rem;
         span{
-            font-size: 80px;
+            font-size: 5rem;
         }
     }
 
     .search_results_in__video__cart .about_content__videos{
         height: 500px;
     }
+
+    .search_results_in__max__list .search_results_in__max__item + .search_results_in__max__item{
+        margin-top: 30px;
+    }
+
 }
 
 @media (max-width:900px){
@@ -807,11 +580,11 @@
     }
 
     .search_results_in__title__h2 {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     .search_results_in__max__title__h2 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .search_results_in__video__cart .about_content__videos{
@@ -819,9 +592,9 @@
     }
 
     .search_results_in__virtual_tur__title {
-        font-size: 30px;
+        font-size: 1.875rem;
         span{
-            font-size: 60px;
+            font-size: 3.75rem;
         }
     }
 
@@ -837,15 +610,15 @@
     }
 
     .search_results_in__title__h2 {
-        font-size: 26px;
+        font-size: 1.625rem;
     }
 
     .search_results_in__max__title__h2 {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
     .search_results_in__contint__title__h3 {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .search_results_in__title__h5, 
@@ -854,15 +627,9 @@
     .search_results_in__map__link, 
     .search_results_in__contint__text, 
     .search_results_in__text {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
-    .search_results_in__form__cart{
-        padding: 20px;
-    }
-
-    .search_results_in__form .active .search_results_in__form__list,
-    .search_results_in__form__button,
     .search_results_in__button{
         margin-top: 15px;
     }
@@ -872,14 +639,9 @@
     }
 
     .search_results_in__button,
-    .search_results_in__form__button,
     .search_results_in__carusel__link,
     .search_results_in__virtual_tur__link{
         padding: 10px 20px;
-    }
-
-    .search_results_in__form__textarea{
-        height: 120px;
     }
 
     .search_results_in__map__cart iframe {
@@ -928,10 +690,14 @@
     }
 
     .search_results_in__virtual_tur__title {
-        font-size: 30px;
+        font-size: 1.875rem;
         span{
-            font-size: 56px;
+            font-size: 3.5rem;
         }
+    }
+
+    .search_results_in__max__list .search_results_in__max__item + .search_results_in__max__item{
+        margin-top: 20px;
     }
 }
 
